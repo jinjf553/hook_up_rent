@@ -18,11 +18,12 @@ samples, guidance on mobile development, and a full API reference.
 ## 一、 项目框架
 
     3.1、初始化项目
-    3.2、编写一个简单页面
-    3.3、安装fluro并添加登录页面
-    3.4、如何配置fluro
-    3.5、配置fluro
-    3.6、优化路由配置
+    3.2、编写一个简单页面-准备
+    3.3、编写一个简单页面-实现
+    3.4、安装fluro并添加登录页面
+    3.5、如何配置fluro
+    3.6、配置fluro
+    3.7、优化路由配置
 
 ### 3.1、 初始化项目
 
@@ -40,3 +41,23 @@ samples, guidance on mobile development, and a full API reference.
         4. 有状态组件
     注意:
         1. 如果没有命令Flutter： New Project，则说明fluter安装有问题
+
+### 3.3、 编写一个简单页面-实现
+
+    【操作步骤】
+    1. 添加PageContent组件
+        1. 新建文件/widgets/page_content.dart
+        2. 添加material依赖
+        3. 编写无状态组件
+        4. 添加name参数
+        5. 使用Scaffold
+    2. 添加home页面
+        1. 新建文件/pages/home/index.dart
+        2. 添加material, page_content依赖
+        3. 编写无状态组件
+        4. 使用PageContent
+    3. 添加Application应用根组件
+        1. 新建文件/application.dart
+        2. 添加依赖
+        3. 使用MaterialApp
+    4. 测试
