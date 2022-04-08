@@ -73,3 +73,18 @@ samples, guidance on mobile development, and a full API reference.
             fluro: "^1.5.1"
     3. 添加/pages/login.dart
     4. 参考/pages/home/index.dart完善登录页
+
+### 3.6、 配置fluro
+
+    【操作步骤】
+    1. 编写路由配置文件
+        1. 创建routes.dart文件并编写Routes类的基本结构
+        2. 定义路由名称
+        3. 定义路由处理函数
+        4. 编写函数configureRoutes关联路由名称和处理函数
+    2. 在Application中配置路由
+        1. 定义router
+        2. 通过调用configureRoutes配置router
+        3. 在MaterialApp中使用router
+    3. 测试路由
+        1. 在PageContent中添加跳转按钮
