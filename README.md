@@ -25,6 +25,20 @@ samples, guidance on mobile development, and a full API reference.
     3.6、配置fluro
     3.7、优化路由配置
 
+## 二、 静态页面
+
+    4.1、登录页面-页面分析
+    4.2、登录页-主体结构
+    4.3、登录页-密码显示隐藏
+    4.4、登录页-细节优化
+    4.5、注册页-添加
+    4.6、注册页-完善
+    4.7、首页-tab-分析
+    4.8、首页-tab-编码
+    4.9、首页-tabIndex-分析
+    4.10、首页-tabIndex-轮播图
+    4.11、封装CommonImage
+
 ### 3.1、 初始化项目
 
     【操作步骤】
