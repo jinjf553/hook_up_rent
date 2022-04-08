@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
-import 'package:hook_up_rent/pages/home/index.dart';
+// import 'package:hook_up_rent/pages/home/index.dart';
+import 'package:hook_up_rent/pages/login.dart';
 
 class Application extends StatelessWidget {
   const Application({Key? key}) : super(key: key);
@@ -7,7 +8,7 @@ class Application extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return const MaterialApp(
-      home: HomePage(),
+      home: LoginPage(),
     );
   }
 }

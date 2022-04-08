@@ -61,3 +61,15 @@ samples, guidance on mobile development, and a full API reference.
         2. 添加依赖
         3. 使用MaterialApp
     4. 测试
+
+### 3.4、 安装fluro并添加登录页面
+
+    1. 了解fluro
+        1. 简单
+        2. 支持参数通配符/room/:id
+        3. 简化自定义动画
+    2. 添加依赖
+        dependencies:
+            fluro: "^1.5.1"
+    3. 添加/pages/login.dart
+    4. 参考/pages/home/index.dart完善登录页
