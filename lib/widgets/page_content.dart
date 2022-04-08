@@ -27,6 +27,16 @@ class PageContent extends StatelessWidget {
                 Navigator.pushNamed(context, Routes.login);
               },
               child: Text(Routes.login)),
+          TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/aaaa');
+              },
+              child: const Text('不存在的页面')),
+          TextButton(
+              onPressed: () {
+                Navigator.pushNamed(context, '/room/2222');
+              },
+              child: const Text('房屋详情页, id: 2222')),
         ],
       ),
     );

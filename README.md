@@ -88,3 +88,19 @@ samples, guidance on mobile development, and a full API reference.
         3. 在MaterialApp中使用router
     3. 测试路由
         1. 在PageContent中添加跳转按钮
+
+### 3.7、 优化路由配置
+
+    【操作步骤】
+    1. 错误页面处理
+        1. 在/pages目录添加not_found.dart文件
+        2. 实现NotFoundPage
+        3. 在/routes.dart添加_notFoundHandler
+        4. 在/routes.dart的configureRoutes中添加router.notFoundHandler=_notFoundHandler;
+        5. 修改pageContent测试
+    2. 带参数页面处理
+        1. 在/pages目录添加room_detail/index.dart文件
+        2. 实现RoomDetailPage
+        3. 在/Routes.dart添加_roomDetailHandler
+        4. 在/routes.dart的configureRoutes中添加router.roomDetailHandler=_roomDetailHandler;
+        5. 修改PageContent测试
