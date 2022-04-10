@@ -11,7 +11,6 @@ class RegisterPage extends StatefulWidget {
 }
 
 class _RegisterPageState extends State<RegisterPage> {
-  bool showPassword = false;
   @override
   Widget build(BuildContext context) {
 //     1. 添加Scaffold
@@ -29,21 +28,20 @@ class _RegisterPageState extends State<RegisterPage> {
             ),
             //     2. 密码
             const Padding(padding: EdgeInsets.all(10.0)),
-            TextField(
-                obscureText: !showPassword,
+            const TextField(
+                obscureText: false,
                 decoration: InputDecoration(
-                    labelText: '密码',
-                    hintText: '请输入密码',
-                    suffixIcon: IconButton(
-                      icon: showPassword
-                          ? const Icon(Icons.visibility_off)
-                          : const Icon(Icons.visibility),
-                      onPressed: () {
-                        setState(() {
-                          showPassword = !showPassword;
-                        });
-                      },
-                    ))),
+                  labelText: '密码',
+                  hintText: '请输入密码',
+                )),
+
+            const Padding(padding: EdgeInsets.all(10.0)),
+            const TextField(
+                obscureText: false,
+                decoration: InputDecoration(
+                  labelText: '确认密码',
+                  hintText: '请输入密码',
+                )),
 
             //     3. 登录按钮
             const Padding(padding: EdgeInsets.all(10.0)),
@@ -51,7 +49,7 @@ class _RegisterPageState extends State<RegisterPage> {
               onPressed: () {},
               style: ElevatedButton.styleFrom(primary: Colors.green),
               child: const Text(
-                '登录',
+                '注册',
                 style: TextStyle(color: Colors.white),
               ),
             ),
@@ -60,13 +58,13 @@ class _RegisterPageState extends State<RegisterPage> {
             Row(
               mainAxisAlignment: MainAxisAlignment.center,
               children: [
-                const Text('还没有账号,'),
+                const Text('已没有账号,'),
                 TextButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('register');
+                      Navigator.of(context).pushReplacementNamed('login');
                     },
                     child: const Text(
-                      '去注册~',
+                      '去登录~',
                       style: TextStyle(color: Colors.green),
                     ))
               ],

@@ -63,7 +63,7 @@ class _LoginPageState extends State<LoginPage> {
                 const Text('还没有账号,'),
                 TextButton(
                     onPressed: () {
-                      Navigator.of(context).pushNamed('register');
+                      Navigator.of(context).pushReplacementNamed('register');
                     },
                     child: const Text(
                       '去注册~',

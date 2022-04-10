@@ -163,3 +163,11 @@ samples, guidance on mobile development, and a full API reference.
         2. 添加route handle
         3. 在configureRoutes中关联name和router
     6. 修改类组件类型，需要重启app后测试
+
+### 4.6、 注册页-完善
+
+    【操作步骤】
+    1. 删除密码显示逻辑
+    2. 添加确认密码
+    3. 修改按钮及下方链接的文案
+    4. 优化登录注册跳转，使用Navigator.pushReplacementNamed
