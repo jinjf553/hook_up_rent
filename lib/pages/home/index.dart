@@ -7,7 +7,7 @@ import 'package:hook_up_rent/widgets/page_content.dart';
 List<Widget> tabViewList = [
   const PageContent(name: '首页'),
   const PageContent(name: '搜索'),
-  const PageContent(name: '咨询'),
+  const PageContent(name: '资讯'),
   const PageContent(name: '我的'),
 ];
 
@@ -15,7 +15,7 @@ List<Widget> tabViewList = [
 List<BottomNavigationBarItem> barItemList = [
   const BottomNavigationBarItem(label: '首页', icon: Icon(Icons.home)),
   const BottomNavigationBarItem(label: '搜索', icon: Icon(Icons.search)),
-  const BottomNavigationBarItem(label: '咨询', icon: Icon(Icons.info)),
+  const BottomNavigationBarItem(label: '资讯', icon: Icon(Icons.info)),
   const BottomNavigationBarItem(label: '我的', icon: Icon(Icons.account_circle)),
 ];
 

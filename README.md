@@ -191,3 +191,13 @@ samples, guidance on mobile development, and a full API reference.
     4. 删除appBar
     5. 修改Scaffold.body
     6. 修改Scaffold.bottomNavigationBar
+
+### 4.9、 首页-tabIndex-分析
+
+    【结论】
+    首页第一个tab（tabIndex）共5个区域, 对应5个不用的模块。
+    1. 顶部区域--searchBar
+    2. 轮播图区域--IndexSwipper
+    3. 导航区域--IndexNavigator
+    4. 房屋推荐区域--IndexRecommend
+    5. 资讯区域--Info
