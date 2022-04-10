@@ -232,3 +232,11 @@ samples, guidance on mobile development, and a full API reference.
         4. 删除Swiper.control
     3. 测试
         1. 在tabIndex中使用CommonSwiper
+
+### 4.13、 首页-tabIndex-导航-准备
+
+    【资源准备】
+    1. 本地图片准备
+        1. 将图片拷贝到/static/images/目录
+        2. 在pubspec.yaml中引入图片
+    2. 数据准备

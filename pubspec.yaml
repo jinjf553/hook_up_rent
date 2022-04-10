@@ -89,3 +89,8 @@ flutter:
   #
   # For details regarding fonts from package dependencies,
   # see https://flutter.dev/custom-fonts/#from-packages
+  assets:
+    - static/images/home_index_navigator_total.png
+    - static/images/home_index_navigator_map.png
+    - static/images/home_index_navigator_share.png
+    - static/images/home_index_navigator_rent.png
