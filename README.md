@@ -250,3 +250,8 @@ samples, guidance on mobile development, and a full API reference.
     4. 完成页面结构
     5. 测试
     6. 调整细节
+
+### 4.15、 组件CommonImage封装-分析
+
+    【结论】
+    使用flutter_advanced_networkimage_2 版本^2.0.1, 自己封装一个图片组件！
