@@ -240,3 +240,13 @@ samples, guidance on mobile development, and a full API reference.
         1. 将图片拷贝到/static/images/目录
         2. 在pubspec.yaml中引入图片
     2. 数据准备
+
+### 4.14、 首页-tabIndex-导航-实现
+
+    【操作步骤】
+    1. 添加文件/pages/home/tab_index/index_navigator.dart
+    2. 添加依赖material和index_navigator_item
+    3. 编写无状态组件
+    4. 完成页面结构
+    5. 测试
+    6. 调整细节

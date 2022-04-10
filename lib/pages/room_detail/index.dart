@@ -8,9 +8,7 @@ class RoomDetailPage extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Container(
-          child: Text('roomid:$roomId'),
-        ),
+        title: Text('roomid:$roomId'),
       ),
       body: Text(roomId),
     );

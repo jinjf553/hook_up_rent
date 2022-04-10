@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hook_up_rent/pages/home/tab_index/index_navigator.dart';
 import 'package:hook_up_rent/widgets/common_swiper.dart';
 
 class TabIndex extends StatelessWidget {
@@ -12,6 +13,7 @@ class TabIndex extends StatelessWidget {
       ),
       body: ListView(children: const [
         CommonSwiper(),
+        IndexNavigator(),
         Text('这里是内容区域'),
       ]),
     );
