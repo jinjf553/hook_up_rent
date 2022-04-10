@@ -181,3 +181,13 @@ samples, guidance on mobile development, and a full API reference.
     4. 可以使用flutter自带组件BottomNavigationBar实现
         1. 需要准备4个tab内容区(tabView)
         2. 需要准备4个BottomNavigationBarItem
+
+### 4.8、 首页-tab-编码
+
+    【操作步骤】
+    1. 将HomePage改成有状态组件
+    2. 使用准备好的数据
+    3. 使用官网demo代码
+    4. 删除appBar
+    5. 修改Scaffold.body
+    6. 修改Scaffold.bottomNavigationBar

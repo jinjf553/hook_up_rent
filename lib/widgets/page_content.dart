@@ -13,7 +13,7 @@ class PageContent extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: Text('当前页面：$name'),
+        title: Center(child: Text('当前页面：$name')),
       ),
       body: ListView(
         children: [
