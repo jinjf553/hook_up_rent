@@ -150,3 +150,16 @@ samples, guidance on mobile development, and a full API reference.
     3. 边距/异形屏幕问题？ ——> 使用SafeArea
     4. 垂直高度不足问题？ ——> 使用ListView替代Column
     5. 登录按钮宽度和颜色问题？ ——> 宽度：SizeBox或者父级固定宽度，颜色：手动设置
+
+### 4.5、 注册页-添加
+
+    【操作步骤】
+    1. 添加文件/pages/register.dart
+    2. 将login.dart文件拷贝到register.dart
+    3. 修改类名称
+    4. 修改title
+    5. 在路由中添加register
+        1. 添加route name
+        2. 添加route handle
+        3. 在configureRoutes中关联name和router
+    6. 修改类组件类型，需要重启app后测试

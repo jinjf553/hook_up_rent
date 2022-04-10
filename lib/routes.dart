@@ -3,6 +3,7 @@ import 'package:flutter/cupertino.dart';
 import 'package:hook_up_rent/pages/home/index.dart';
 import 'package:hook_up_rent/pages/login.dart';
 import 'package:hook_up_rent/pages/not_found.dart';
+import 'package:hook_up_rent/pages/register.dart';
 import 'package:hook_up_rent/pages/room_detail/index.dart';
 
 class Routes {
@@ -10,6 +11,7 @@ class Routes {
   //   2. 定义路由名称
   static var home = "/";
   static var login = '/login';
+  static var register = '/register';
   static var roomDetail = '/room/:roomId';
   //   3. 定义路由处理函数
   static final Handler _homeHandle = Handler(
@@ -21,6 +23,12 @@ class Routes {
   static final Handler _loginHandle = Handler(
     handlerFunc: (BuildContext context, Map<String, dynamic> params) {
       return const LoginPage();
+    },
+  );
+
+  static final Handler _registerHandle = Handler(
+    handlerFunc: (BuildContext context, Map<String, dynamic> params) {
+      return const RegisterPage();
     },
   );
 
@@ -40,6 +48,7 @@ class Routes {
   static void configureRoutes(FluroRouter router) {
     router.define(home, handler: _homeHandle);
     router.define(login, handler: _loginHandle);
+    router.define(register, handler: _registerHandle);
     router.notFoundHandler = _notFoundHandle;
     router.define(roomDetail, handler: _roomDetailHandle);
   }
