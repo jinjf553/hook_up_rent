@@ -131,3 +131,13 @@ samples, guidance on mobile development, and a full API reference.
         4. 注册链接
     4. 主题颜色——theme
     5. 测试
+
+### 4.3、 登录页-密码显示隐藏
+
+    【操作步骤】
+    1. 将无状态组件改成有状态组件——右键 重构
+    2. 添加可点击的图标——iconButton
+    3. 添加状态——showPassword
+    4. 根据状态展示不同内容
+    5. 给图标添加点击事件
+    6. 测试

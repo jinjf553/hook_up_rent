@@ -1,12 +1,17 @@
 // 1. 新建文件/pages/home/index.dart
 // 2. 添加material, page_content依赖
 import 'package:flutter/material.dart';
-import 'package:hook_up_rent/widgets/page_content.dart';
 
 // 3. 编写无状态组件
-class LoginPage extends StatelessWidget {
+class LoginPage extends StatefulWidget {
   const LoginPage({Key? key}) : super(key: key);
 
+  @override
+  State<LoginPage> createState() => _LoginPageState();
+}
+
+class _LoginPageState extends State<LoginPage> {
+  bool showPassword = false;
   @override
   Widget build(BuildContext context) {
 //     1. 添加Scaffold
@@ -21,9 +26,22 @@ class LoginPage extends StatelessWidget {
             decoration: InputDecoration(labelText: '用户名', hintText: '请输入用户名'),
           ),
           //     2. 密码
-          const TextField(
-              obscureText: true,
-              decoration: InputDecoration(labelText: '密码', hintText: '请输入密码')),
+          TextField(
+              obscureText: !showPassword,
+              decoration: InputDecoration(
+                  labelText: '密码',
+                  hintText: '请输入密码',
+                  suffixIcon: IconButton(
+                    icon: showPassword
+                        ? const Icon(Icons.visibility_off)
+                        : const Icon(Icons.visibility),
+                    onPressed: () {
+                      setState(() {
+                        showPassword = !showPassword;
+                      });
+                    },
+                  ))),
+
           //     3. 登录按钮
           ElevatedButton(
             onPressed: () {},
