@@ -10,6 +10,7 @@ class Application extends StatelessWidget {
     FluroRouter router = FluroRouter();
     Routes.configureRoutes(router);
     return MaterialApp(
+      theme: ThemeData(primaryColor: Colors.green),
       onGenerateRoute: router.generator,
     );
   }

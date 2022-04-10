@@ -118,3 +118,16 @@ samples, guidance on mobile development, and a full API reference.
         3. 在/Routes.dart添加_roomDetailHandler
         4. 在/routes.dart的configureRoutes中添加router.roomDetailHandler=_roomDetailHandler;
         5. 修改PageContent测试
+
+### 4.2、 登录页-主体结构
+
+    【操作步骤】
+    1. 添加Scaffold
+    2. 完成appBar部分
+    3. 完成body部分
+        1. 用户名
+        2. 密码
+        3. 登录按钮
+        4. 注册链接
+    4. 主题颜色——theme
+    5. 测试
