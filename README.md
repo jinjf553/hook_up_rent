@@ -215,3 +215,20 @@ samples, guidance on mobile development, and a full API reference.
 
     【结论】
     使用flutter_swiper第三方组件实现轮播图功能
+
+### 4.12、 首页-tabIndex-轮播图-实现
+
+    【操作步骤】
+    1. 准备组件框架代码
+        1. 新建文件/widgets/common_swiper.dart
+        2. 添加依赖material和flutter_swiper
+        3. 准备图片数据
+        4. 编写无状态组件
+        5. 添加images参数并在构造函数中赋值
+    2. 编写swiper核心代码
+        1. 参照官网使用swiper
+        2. 修改itemBuilder和itemCount
+        3. Swiper父组件指定高度
+        4. 删除Swiper.control
+    3. 测试
+        1. 在tabIndex中使用CommonSwiper
