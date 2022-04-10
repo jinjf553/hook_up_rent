@@ -19,47 +19,60 @@ class _LoginPageState extends State<LoginPage> {
       // 2. 完成appBar部分
       appBar: AppBar(title: const Text('登录')),
       // 3. 完成body部分
-      body: Column(
-        children: [
-          //     1. 用户名
-          const TextField(
-            decoration: InputDecoration(labelText: '用户名', hintText: '请输入用户名'),
-          ),
-          //     2. 密码
-          TextField(
-              obscureText: !showPassword,
-              decoration: InputDecoration(
-                  labelText: '密码',
-                  hintText: '请输入密码',
-                  suffixIcon: IconButton(
-                    icon: showPassword
-                        ? const Icon(Icons.visibility_off)
-                        : const Icon(Icons.visibility),
-                    onPressed: () {
-                      setState(() {
-                        showPassword = !showPassword;
-                      });
-                    },
-                  ))),
+      body: SafeArea(
+        minimum: const EdgeInsets.all(30.0),
+        child: ListView(
+          children: [
+            //     1. 用户名
+            const TextField(
+              decoration: InputDecoration(labelText: '用户名', hintText: '请输入用户名'),
+            ),
+            //     2. 密码
+            const Padding(padding: EdgeInsets.all(10.0)),
+            TextField(
+                obscureText: !showPassword,
+                decoration: InputDecoration(
+                    labelText: '密码',
+                    hintText: '请输入密码',
+                    suffixIcon: IconButton(
+                      icon: showPassword
+                          ? const Icon(Icons.visibility_off)
+                          : const Icon(Icons.visibility),
+                      onPressed: () {
+                        setState(() {
+                          showPassword = !showPassword;
+                        });
+                      },
+                    ))),
 
-          //     3. 登录按钮
-          ElevatedButton(
-            onPressed: () {},
-            child: const Text('登录'),
-          ),
-          //     4. 注册链接
-          Row(
-            mainAxisAlignment: MainAxisAlignment.center,
-            children: [
-              const Text('还没有账号,'),
-              TextButton(
-                  onPressed: () {
-                    Navigator.of(context).pushNamed('register');
-                  },
-                  child: const Text('去注册~'))
-            ],
-          ),
-        ],
+            //     3. 登录按钮
+            const Padding(padding: EdgeInsets.all(10.0)),
+            ElevatedButton(
+              onPressed: () {},
+              style: ElevatedButton.styleFrom(primary: Colors.green),
+              child: const Text(
+                '登录',
+                style: TextStyle(color: Colors.white),
+              ),
+            ),
+            //     4. 注册链接
+            const Padding(padding: EdgeInsets.all(10.0)),
+            Row(
+              mainAxisAlignment: MainAxisAlignment.center,
+              children: [
+                const Text('还没有账号,'),
+                TextButton(
+                    onPressed: () {
+                      Navigator.of(context).pushNamed('register');
+                    },
+                    child: const Text(
+                      '去注册~',
+                      style: TextStyle(color: Colors.green),
+                    ))
+              ],
+            ),
+          ],
+        ),
       ),
     );
 // 4. 主题颜色——theme

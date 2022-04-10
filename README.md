@@ -141,3 +141,12 @@ samples, guidance on mobile development, and a full API reference.
     4. 根据状态展示不同内容
     5. 给图标添加点击事件
     6. 测试
+
+### 4.4、 登录页-细节优化
+
+    【问题及解决方案】
+    1. 【去注册】颜色问题 ——> 添加style
+    2. 上下间距问题？ ——> 添加Padding
+    3. 边距/异形屏幕问题？ ——> 使用SafeArea
+    4. 垂直高度不足问题？ ——> 使用ListView替代Column
+    5. 登录按钮宽度和颜色问题？ ——> 宽度：SizeBox或者父级固定宽度，颜色：手动设置
