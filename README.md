@@ -171,3 +171,13 @@ samples, guidance on mobile development, and a full API reference.
     2. 添加确认密码
     3. 修改按钮及下方链接的文案
     4. 优化登录注册跳转，使用Navigator.pushReplacementNamed
+
+### 4.7、 首页-tab-分析
+
+    【结论】
+    1. 首页共用tab按钮区域
+    2. tab内容区的appBar不一样
+    3. 4个tab内容区不一样
+    4. 可以使用flutter自带组件BottomNavigationBar实现
+        1. 需要准备4个tab内容区(tabView)
+        2. 需要准备4个BottomNavigationBarItem
