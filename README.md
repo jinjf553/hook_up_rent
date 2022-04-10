@@ -210,3 +210,8 @@ samples, guidance on mobile development, and a full API reference.
     3. 简化实现顶部区域--appBar
     4. body部分包含多个组件且可以滚动——使用ListView
     5. 在HomePage中使用TabIndex
+
+### 4.11、 首页-tabIndex-轮播图-准备
+
+    【结论】
+    使用flutter_swiper第三方组件实现轮播图功能
