@@ -1,11 +1,12 @@
 // 1. 新建文件/pages/home/index.dart
 // 2. 添加material, page_content依赖
 import 'package:flutter/material.dart';
+import 'package:hook_up_rent/pages/home/tab_index/index.dart';
 import 'package:hook_up_rent/widgets/page_content.dart';
 
 // 1. 需要准备4个tab内容区(tabView)
 List<Widget> tabViewList = [
-  const PageContent(name: '首页'),
+  const TabIndex(),
   const PageContent(name: '搜索'),
   const PageContent(name: '资讯'),
   const PageContent(name: '我的'),

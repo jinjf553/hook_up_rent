@@ -201,3 +201,12 @@ samples, guidance on mobile development, and a full API reference.
     3. 导航区域--IndexNavigator
     4. 房屋推荐区域--IndexRecommend
     5. 资讯区域--Info
+
+### 4.10、 首页-tabIndex-页面结构
+
+    【操作步骤】
+    1. 新建文件/pages/home/tab_index/index.dart
+    2. 添加依赖，编写无状态组件
+    3. 简化实现顶部区域--appBar
+    4. body部分包含多个组件且可以滚动——使用ListView
+    5. 在HomePage中使用TabIndex
