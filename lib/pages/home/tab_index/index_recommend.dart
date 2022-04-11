@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/tab_index/index_recommend_data.dart';
+import 'package:hook_up_rent/pages/home/tab_index/index_recommend_item_widget.dart';
 
 class IndexRecommend extends StatelessWidget {
   final List<IndexRecommendItem> dataList;
@@ -32,9 +33,10 @@ class IndexRecommend extends StatelessWidget {
           runSpacing: 10.0,
           children: dataList
               .map((item) => Container(
-                    decoration: const BoxDecoration(color: Colors.red),
+                    child: IndexRecommendItemWidget(item),
+                    decoration: const BoxDecoration(color: Colors.white),
                     width: (MediaQuery.of(context).size.width - 10.0 * 3) / 2,
-                    height: 100.0,
+                    padding: const EdgeInsets.all(10.0),
                   ))
               .toList(),
         )

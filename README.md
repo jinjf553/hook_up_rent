@@ -205,7 +205,7 @@ samples, guidance on mobile development, and a full API reference.
 ### 4.10、 首页-tabIndex-页面结构
 
     【操作步骤】
-    1. 新建文件/pages/home/tab_index/index.dart
+    1. 新建文件pages/home/tab_index/index.dart
     2. 添加依赖，编写无状态组件
     3. 简化实现顶部区域--appBar
     4. body部分包含多个组件且可以滚动——使用ListView
@@ -220,7 +220,7 @@ samples, guidance on mobile development, and a full API reference.
 
     【操作步骤】
     1. 准备组件框架代码
-        1. 新建文件/widgets/common_swiper.dart
+        1. 新建文件widgets/common_swiper.dart
         2. 添加依赖material和flutter_swiper
         3. 准备图片数据
         4. 编写无状态组件
@@ -237,14 +237,14 @@ samples, guidance on mobile development, and a full API reference.
 
     【资源准备】
     1. 本地图片准备
-        1. 将图片拷贝到/static/images/目录
+        1. 将图片拷贝到static/images/目录
         2. 在pubspec.yaml中引入图片
     2. 数据准备
 
 ### 4.14、 首页-tabIndex-导航-实现
 
     【操作步骤】
-    1. 添加文件/pages/home/tab_index/index_navigator.dart
+    1. 添加文件pages/home/tab_index/index_navigator.dart
     2. 添加依赖material和index_navigator_item
     3. 编写无状态组件
     4. 完成页面结构
@@ -292,3 +292,12 @@ samples, guidance on mobile development, and a full API reference.
         3. 完善header部分
         4. 添加wrap
     3. 测试
+
+### 4.19、 首页-tabIndex-推荐-编码-item部分
+
+    【操作步骤】
+    1. 新建文件pages/home/tab_index/index_recommend_item_widget.dart
+    2. 添加依赖，无状态组件，data参数
+    3. 编写主体结构
+    4. 使用并测试
+    5. 完善细节
