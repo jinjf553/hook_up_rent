@@ -272,3 +272,9 @@ samples, guidance on mobile development, and a full API reference.
         2. 如果是本地图片，使用Image.asset
         3. 返回Container
     4. 使用CommonImage
+
+### 4.17、 首页-tabIndex-推荐-准备
+
+    【数据准备】
+    1. 准备静态图片
+    2. 准备数据代码
