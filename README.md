@@ -278,3 +278,17 @@ samples, guidance on mobile development, and a full API reference.
     【数据准备】
     1. 准备静态图片
     2. 准备数据代码
+
+### 4.18、 首页-tabIndex-推荐-编码-主体结构部分
+
+    【操作步骤】
+    1. 准备
+        1. 新建文件pages/home/tab_index/index_recommend_data.dart
+        2. 使用上一节准备好的数据
+        3. 新建文件pages/home/tab_index/index_recommend.dart
+    2. 编写核心代码
+        1. 添加依赖，dataList参数，无状态组件，indexRecommendData改成常量
+        2. 添加背景色及边距
+        3. 完善header部分
+        4. 添加wrap
+    3. 测试
