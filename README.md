@@ -255,3 +255,20 @@ samples, guidance on mobile development, and a full API reference.
 
     【结论】
     使用flutter_advanced_networkimage_2 版本^2.0.1, 自己封装一个图片组件！
+
+### 4.16、 组件CommonImage封装-实现
+
+    【操作步骤】
+    1. 准备
+        1. 安装flutter_advanced_networkimage_2:^2.0.1依赖
+        2. 添加文件/widgets/common_image.dart
+        3. 引入依赖
+        4. 编写正则根据图片地址判断是网络图片还是本地图片
+    2. 编写框架代码
+        1. 编写无状态组件
+        2. 完善组件参数src with height fit
+    3. 完成核心逻辑
+        1. 如果是网络图片，使用flutter_advanced_networkimage_2
+        2. 如果是本地图片，使用Image.asset
+        3. 返回Container
+    4. 使用CommonImage
