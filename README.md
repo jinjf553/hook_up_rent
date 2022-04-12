@@ -301,3 +301,11 @@ samples, guidance on mobile development, and a full API reference.
     3. 编写主体结构
     4. 使用并测试
     5. 完善细节
+
+### 4.20、 首页-tabIndex-资讯-准备
+
+    【数据准备】
+    1. 准备数据代码
+    注意：
+        1. 文字区域可能随屏幕宽度而改变
+        2. title自动换行问题
