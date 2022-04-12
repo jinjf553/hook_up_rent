@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/info/data.dart';
+import 'package:hook_up_rent/pages/home/info/item_widget.dart';
 
 class Info extends StatelessWidget {
   final bool? showTitle;
@@ -23,13 +24,7 @@ class Info extends StatelessWidget {
             ),
           ),
         Column(
-          children: dataList
-              .map((item) => Container(
-                    height: 100,
-                    margin: const EdgeInsets.only(bottom: 10.0),
-                    decoration: const BoxDecoration(color: Colors.red),
-                  ))
-              .toList(),
+          children: dataList.map((item) => ItemWidget(item)).toList(),
         )
       ],
     );

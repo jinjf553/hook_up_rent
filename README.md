@@ -325,3 +325,12 @@ samples, guidance on mobile development, and a full API reference.
     注意：
         1. Container alignment的使用
         2. 可以通过以下方式修改dart版本
+
+### 4.22、 首页-tabIndex-资讯-编码-item部分
+
+    【操作步骤】
+    1. 创建文件pages/home/info/item_widget.dart
+    2. 引入依赖，编写无状态组件，添加data参数
+    3. 完成主体结构
+    4. 测试代码
+    5. 完善细节
