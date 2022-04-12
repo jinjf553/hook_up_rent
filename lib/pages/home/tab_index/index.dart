@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hook_up_rent/pages/home/info/index.dart';
 import 'package:hook_up_rent/pages/home/tab_index/index_navigator.dart';
 import 'package:hook_up_rent/pages/home/tab_index/index_recommend.dart';
 import 'package:hook_up_rent/widgets/common_swiper.dart';
@@ -16,6 +17,7 @@ class TabIndex extends StatelessWidget {
         CommonSwiper(),
         IndexNavigator(),
         IndexRecommend(),
+        Info(showTitle: true),
         Text('这里是内容区域'),
       ]),
     );

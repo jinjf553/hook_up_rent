@@ -309,3 +309,19 @@ samples, guidance on mobile development, and a full API reference.
     注意：
         1. 文字区域可能随屏幕宽度而改变
         2. title自动换行问题
+
+### 4.21、 首页-tabIndex-资讯-编码-主体结构
+
+    【操作步骤】
+    1. 准备
+        1. 添加文件pages/home/info/data.dart
+        2. 添加上一节数据到data.dart
+        3. 添加文件pages/home/info/index.dart
+        4. 在index.dart添加material依赖
+    2. 编写核心代码
+        1. 完善title部分——注意title部分根据参数显示或隐藏
+        2. 完善body部分
+    3. 测试
+    注意：
+        1. Container alignment的使用
+        2. 可以通过以下方式修改dart版本
