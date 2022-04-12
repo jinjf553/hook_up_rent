@@ -334,3 +334,12 @@ samples, guidance on mobile development, and a full API reference.
     3. 完成主体结构
     4. 测试代码
     5. 完善细节
+
+### 4.23、 首页-tabInfo
+
+    【操作步骤】
+    1. 新建文件pages/home/tab_info/index.dart
+    2. 添加material依赖，编写有状态组件
+    3. 完善header部分
+    4. 完善body部分
+    5. 测试
