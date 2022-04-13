@@ -357,3 +357,14 @@ samples, guidance on mobile development, and a full API reference.
     3. 引入依赖，创建有状态组件
     4. 编写主体结构
     5. 测试
+
+### 4.26、 首页-tabSearch-item部分
+
+    【操作步骤】
+    1. 创建文件widgets/room_list_item_widget.dart
+    2. 引入依赖，创建无状态组件，添加参数data
+    3. 完成主体结构
+    4. 添加测试
+    5. 完善细节
+    要点：
+    文本...的问题

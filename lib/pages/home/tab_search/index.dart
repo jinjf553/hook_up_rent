@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/tab_search/data_list.dart';
+import 'package:hook_up_rent/widgets/room_list_item_widget.dart';
 
 class TabSearch extends StatefulWidget {
   const TabSearch({Key? key}) : super(key: key);
@@ -21,13 +22,8 @@ class _TabSearchState extends State<TabSearch> {
           ),
           Expanded(
             child: ListView(
-              children: dataList
-                  .map((item) => Container(
-                        height: 200.0,
-                        margin: const EdgeInsets.only(bottom: 10.0),
-                        decoration: const BoxDecoration(color: Colors.grey),
-                      ))
-                  .toList(),
+              children:
+                  dataList.map((item) => RoomListItemWidget(item)).toList(),
             ),
           )
         ],
