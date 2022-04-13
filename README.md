@@ -390,3 +390,14 @@ samples, guidance on mobile development, and a full API reference.
         2. 拷贝目标地址
         3. 在项目配置文件pubspec.yaml添加
             1. -static/icons/widget_search_bar_map.png
+
+### 4.29、 组件SearchBar封装-主体结构开发
+
+    【操作步骤】
+    1. 创建文件widgets/search_bar/index.dart
+    2. 引入material依赖，创建有状态组件，添加参数
+    3. 编写界面代码
+    4. 测试
+    5. 完善代码
+    要点：
+    在有状态组件中使用参数(title)方式widget.title
