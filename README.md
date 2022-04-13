@@ -343,3 +343,8 @@ samples, guidance on mobile development, and a full API reference.
     3. 完善header部分
     4. 完善body部分
     5. 测试
+
+### 4.24、 首页-tabSearch-分析
+
+    【数据准备】
+    1. 数据文件pages/home/tab_search/data_list.dart
