@@ -348,3 +348,12 @@ samples, guidance on mobile development, and a full API reference.
 
     【数据准备】
     1. 数据文件pages/home/tab_search/data_list.dart
+
+### 4.25、 首页-tabSearch-主体结构
+
+    【操作步骤】
+    1. 创建文件pages/home/tab_search/data_list.dart使用上一节准备的数据
+    2. 创建文件pages/home/tab_search/index.dart
+    3. 引入依赖，创建有状态组件
+    4. 编写主体结构
+    5. 测试
