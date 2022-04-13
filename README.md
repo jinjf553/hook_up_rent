@@ -379,3 +379,14 @@ samples, guidance on mobile development, and a full API reference.
     5. 优化参数 使用factory工厂构造函数
     要点：
     圆角设置，factory使用
+
+### 4.28、 组件-SearchBar-封装-分析
+
+    【结论】
+    1. 结构
+    2. 参数
+    3. 静态资源
+        1. 资源地址static/icons/widget_search_bar_map.png
+        2. 拷贝目标地址
+        3. 在项目配置文件pubspec.yaml添加
+            1. -static/icons/widget_search_bar_map.png
