@@ -368,3 +368,14 @@ samples, guidance on mobile development, and a full API reference.
     5. 完善细节
     要点：
     文本...的问题
+
+### 4.27、 首页-tabSearch-tag部分
+
+    【操作步骤】
+    1. 新建文件widgets/common_tag.dart
+    2. 引入material依赖，添加无状态组件，添加参数title,color,backgroundColor
+    3. 完成展示效果
+    4. 测试
+    5. 优化参数 使用factory工厂构造函数
+    要点：
+    圆角设置，factory使用
