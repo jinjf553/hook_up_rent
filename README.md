@@ -401,3 +401,13 @@ samples, guidance on mobile development, and a full API reference.
     5. 完善代码
     要点：
     在有状态组件中使用参数(title)方式widget.title
+
+### 4.30、 组件SearchBar封装-完善搜索框
+
+    【操作步骤】
+    1. 解决背景色，圆角——Container,TextField.InputDecoration.border=InputBorder.none
+    2. 前置图标InputDecoration.prefixIcon
+    3. 后置图标InputDecoration.suffixIcon
+    4. 搜索提示样式InputDecoration.hintStyle
+    5. 居中InputDecoration.contentPadding
+    6. 间距问题 使用InputDecoration.Icon替代InputDecoration.prefixIcon

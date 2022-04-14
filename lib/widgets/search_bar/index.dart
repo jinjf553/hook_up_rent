@@ -63,14 +63,36 @@ class _SearchBarState extends State<SearchBar> {
           ),
         Expanded(
             child: Container(
-          padding: const EdgeInsets.only(right: 10.0),
+          height: 34.0,
+          decoration: BoxDecoration(
+              color: Colors.grey.shade200,
+              borderRadius: BorderRadius.circular(17.0)),
+          margin: const EdgeInsets.only(right: 10.0),
           child: const TextField(
-            decoration: InputDecoration(hintText: '请输入搜索词'),
+            style: TextStyle(fontSize: 14.0),
+            decoration: InputDecoration(
+                border: InputBorder.none,
+                hintText: '请输入搜索词',
+                hintStyle: TextStyle(color: Colors.grey, fontSize: 14.0),
+                contentPadding: EdgeInsets.only(top: 0.0, left: -15.0),
+                suffixIcon: Icon(
+                  Icons.clear,
+                  size: 18.0,
+                  color: Colors.grey,
+                ),
+                icon: Padding(
+                  padding: EdgeInsets.only(top: 1.0, left: 5.0),
+                  child: Icon(
+                    Icons.search,
+                    size: 18.0,
+                    color: Colors.grey,
+                  ),
+                )),
           ),
         )),
         if (widget.onCancel != null || true)
           Padding(
-            padding: const EdgeInsets.only(right: 10.0),
+            padding: const EdgeInsets.only(right: 0.0),
             child: GestureDetector(
               onTap: () {}, // widget.onCancel!(),
               child: const Text(
