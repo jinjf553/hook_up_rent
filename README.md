@@ -411,3 +411,18 @@ samples, guidance on mobile development, and a full API reference.
     4. 搜索提示样式InputDecoration.hintStyle
     5. 居中InputDecoration.contentPadding
     6. 间距问题 使用InputDecoration.Icon替代InputDecoration.prefixIcon
+
+### 4.31、 组件SearchBar封装-细节完善
+
+    【操作步骤】
+    1. 使用参数defaultInputValue
+    2. 使用参数inputValue
+    3. 清除按钮逻辑实现
+        1. 新增状态_searchWord
+        2. 添加处理函数_onClean
+        3. 添加并实例化_controller
+        4. 根据_searchWord隐藏清除按钮
+    4. 添加TextField.onTap
+    5. 添加TextField.onSearchSubmit
+    6. 添加TextField.textInputAction:TextInputAction.search
+    7. 删除`||true`
