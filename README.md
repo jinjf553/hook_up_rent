@@ -461,3 +461,17 @@ samples, guidance on mobile development, and a full API reference.
     3. 完善
         1. 完善appBar部分
         2. 完善body部分
+
+### 4.35、 首页-tabProfile-登录注册
+
+    【操作步骤】
+    1. 准备
+        1. 添加文件pages/home/tab_profile/header.dart
+        2. 添加material依赖，添加无状态组件
+    2. 核心编码
+        1. 添加背景色和高度
+        2. 添加图片"https://tva1.sinaimg.cn/large/006y8mN6ly1g6tbgbqv2nj30i20i2wen.jpg"
+        3. 添加右侧文字
+    3. 测试和完善
+        1. 测试效果
+        2. 完善细节
