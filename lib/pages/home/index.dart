@@ -3,15 +3,15 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/tab_index/index.dart';
 import 'package:hook_up_rent/pages/home/tab_info/index.dart';
+import 'package:hook_up_rent/pages/home/tab_profile/index.dart';
 import 'package:hook_up_rent/pages/home/tab_search/index.dart';
-import 'package:hook_up_rent/widgets/page_content.dart';
 
 // 1. 需要准备4个tab内容区(tabView)
 List<Widget> tabViewList = [
   const TabIndex(),
   const TabSearch(),
   const TabInfo(),
-  const PageContent(name: '我的'),
+  const TabProfile(),
 ];
 
 // 2. 需要准备4个BottomNavigationBarItem

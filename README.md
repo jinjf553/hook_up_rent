@@ -448,3 +448,16 @@ samples, guidance on mobile development, and a full API reference.
         1. 资源地址static/images/home_profile_xxx.png
     3. 配置文件
     4. 列表数据
+
+### 4.34、 首页-tabProfile-主体结构
+
+    【操作步骤】
+    1. 准备
+        1. 添加文件pages/home/tab_profile/index.dart
+        2. 添加material依赖，添加无状态组件
+    2. 主体结构
+        1. 使用Scaffold搭建主体结构
+        2. 测试效果
+    3. 完善
+        1. 完善appBar部分
+        2. 完善body部分
