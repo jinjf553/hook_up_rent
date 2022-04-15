@@ -8,7 +8,7 @@ class FunctionButtonItem {
 }
 
 final List<FunctionButtonItem> list = [
-  FunctionButtonItem('static/images/home_profile_record.png', "看房记录", () {}),
+  FunctionButtonItem('static/images/home_profile_record.png', "看房记录", null),
   FunctionButtonItem('static/images/home_profile_order.png', '我的订单', null),
   FunctionButtonItem('static/images/home_profile_favor.png', '我的收藏', null),
   FunctionButtonItem('static/images/home_profile_id.png', '身份认证', null),

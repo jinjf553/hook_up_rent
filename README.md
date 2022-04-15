@@ -495,3 +495,12 @@ samples, guidance on mobile development, and a full API reference.
         2. 使用Wraper完成主体结构部分
         3. 使用Container替代item
     3. 测试
+
+### 4.38、 首页-tabProfile-功能按钮-item
+
+    【操作步骤】
+    1. 新建文件pages/home/tab_profile/function_button_widget.dart
+    2. 引入依赖，添加无状态组件，添加data参数
+    3. 完成Item主体结构
+    4. 测试
+    5. 完善细节
