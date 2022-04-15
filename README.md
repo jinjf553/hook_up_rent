@@ -483,3 +483,15 @@ samples, guidance on mobile development, and a full API reference.
     2. 根据登录状态使用函数
     3. 修改已登录状态函数"https://tva1.sinaimg.cn/large/006y8mN6ly1g6tbnovh8jj30hr0hrq3l.jpg"
     4. 测试
+
+### 4.37、 首页-tabProfile-功能按钮-主体结构
+
+    【操作步骤】
+    1. 准备
+        1. 准备静态图片
+        2. 准备数据文件pages/home/tab_profile/function_button_data.dart
+    2. 核心编码
+        1. 新建pages/home/tab_profile/function_button.dart
+        2. 使用Wraper完成主体结构部分
+        3. 使用Container替代item
+    3. 测试

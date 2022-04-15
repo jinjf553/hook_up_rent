@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hook_up_rent/pages/home/tab_profile/function_button.dart';
 import 'package:hook_up_rent/pages/home/tab_profile/header.dart';
 
 class TabProfile extends StatelessWidget {
@@ -21,7 +22,8 @@ class TabProfile extends StatelessWidget {
         ],
         backgroundColor: Colors.green,
       ),
-      body: ListView(children: const [Header(), Text('这里是内容区')]),
+      body: ListView(
+          children: const [Header(), FunctionButton(), Text('这里是内容区')]),
     );
   }
 }
