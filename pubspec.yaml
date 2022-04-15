@@ -37,6 +37,7 @@ dependencies:
   fluro: ^1.5.1
   flutter_swiper: ^1.1.6
   flutter_advanced_networkimage_2: ^2.0.1
+  fluttertoast: ^8.0.9
 
 dev_dependencies:
   flutter_test:

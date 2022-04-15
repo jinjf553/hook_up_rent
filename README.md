@@ -513,3 +513,17 @@ samples, guidance on mobile development, and a full API reference.
     3. 完善主体结构'https://tva1.sinaimg.cn/large/006y8mN6ly1g6te62n8f4j30j603vgou.jpg'
     4. 测试
     5. 完善细节
+
+### 4.40、 设置页
+
+    【操作步骤】
+    1. 准备
+        1. 安装依赖fluttertoast:^3.1.3
+        2. utils/common_toast.dart新建文件,封装CommonToast
+        3. 新建文件pages/setting.dart,引入依赖，添加无状态组件
+    2. 核心编码
+        1. 完成页面主体结构
+        2. 在路由系统注册当前页面
+        3. 添加退出登录按钮
+        4. 实现退出登录逻辑
+    3. 测试

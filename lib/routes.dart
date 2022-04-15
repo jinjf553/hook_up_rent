@@ -6,6 +6,7 @@ import 'package:hook_up_rent/pages/home/index.dart';
 import 'package:hook_up_rent/pages/login.dart';
 import 'package:hook_up_rent/pages/not_found.dart';
 import 'package:hook_up_rent/pages/register.dart';
+import 'package:hook_up_rent/pages/setting.dart';
 import 'package:hook_up_rent/pages/room_detail/index.dart';
 
 class Routes {
@@ -15,6 +16,7 @@ class Routes {
   static var login = '/login';
   static var register = '/register';
   static var roomDetail = '/room/:roomId';
+  static var setting = '/setting';
   //   3. 定义路由处理函数
   static final Handler _homeHandle = Handler(
     handlerFunc: (BuildContext context, Map<String, dynamic> params) {
@@ -46,6 +48,11 @@ class Routes {
       );
     },
   );
+  static final Handler _settingHandle = Handler(
+    handlerFunc: (BuildContext context, Map<String, dynamic> params) {
+      return SettingPage();
+    },
+  );
   //   4. 编写函数configureRoutes关联路由名称和处理函数
   static void configureRoutes(FluroRouter router) {
     router.define(home, handler: _homeHandle);
@@ -53,5 +60,6 @@ class Routes {
     router.define(register, handler: _registerHandle);
     router.notFoundHandler = _notFoundHandle;
     router.define(roomDetail, handler: _roomDetailHandle);
+    router.define(setting, handler: _settingHandle);
   }
 }
