@@ -437,3 +437,14 @@ samples, guidance on mobile development, and a full API reference.
         1. 创建焦点对象FocusNode_focus,并实例化
         2. 在TextField使用焦点对象
         3. 在TextField onTap回调函数中通过_focus.unfocus()方法去焦点。
+
+### 4.33、 首页-tabProfile-分析
+
+    【数据准备】
+    1. 网络图片
+        1. 未登录图片"https://tva1.sinaimg.cn/large/006y8mN6ly1g6tbgbqv2nj30i20i2wen.jpg"
+        2. 已登录占位图片"https://tva1.sinaimg.cn/large/006y8mN6ly1g6tbnovh8jj30hr0hrq3l.jpg"
+    2. 静态资源
+        1. 资源地址static/images/home_profile_xxx.png
+    3. 配置文件
+    4. 列表数据
