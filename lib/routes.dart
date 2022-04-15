@@ -6,6 +6,7 @@ import 'package:hook_up_rent/pages/home/index.dart';
 import 'package:hook_up_rent/pages/login.dart';
 import 'package:hook_up_rent/pages/not_found.dart';
 import 'package:hook_up_rent/pages/register.dart';
+import 'package:hook_up_rent/pages/room_manage/index.dart';
 import 'package:hook_up_rent/pages/setting.dart';
 import 'package:hook_up_rent/pages/room_detail/index.dart';
 
@@ -17,6 +18,7 @@ class Routes {
   static var register = '/register';
   static var roomDetail = '/room/:roomId';
   static var setting = '/setting';
+  static var roomManage = '/roomManage';
   //   3. 定义路由处理函数
   static final Handler _homeHandle = Handler(
     handlerFunc: (BuildContext context, Map<String, dynamic> params) {
@@ -50,7 +52,12 @@ class Routes {
   );
   static final Handler _settingHandle = Handler(
     handlerFunc: (BuildContext context, Map<String, dynamic> params) {
-      return SettingPage();
+      return const SettingPage();
+    },
+  );
+  static final Handler _roomManageHandle = Handler(
+    handlerFunc: (BuildContext context, Map<String, dynamic> params) {
+      return const RoomManagePage();
     },
   );
   //   4. 编写函数configureRoutes关联路由名称和处理函数
@@ -61,5 +68,6 @@ class Routes {
     router.notFoundHandler = _notFoundHandle;
     router.define(roomDetail, handler: _roomDetailHandle);
     router.define(setting, handler: _settingHandle);
+    router.define(roomManage, handler: _roomManageHandle);
   }
 }

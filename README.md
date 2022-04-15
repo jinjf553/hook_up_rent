@@ -527,3 +527,17 @@ samples, guidance on mobile development, and a full API reference.
         3. 添加退出登录按钮
         4. 实现退出登录逻辑
     3. 测试
+
+### 4.41、 房屋管理页-主体结构
+
+    【操作步骤】
+    1. 准备
+        1. 添加文件pages/room_manage/index.dart
+        2. 添加material依赖，创建无状态组件
+    2. 核心编码
+        1. 使用Scaffold添加页面主体结构
+        2. 在路由系统注册当前页面
+        3. 添加tab AppBar.bottom:TabBar()
+        4. 添加body:TabBarView()
+        5. 在Scaffold通过DefaultTabController关联Tabbar和TabBarView
+    3. 测试
