@@ -426,3 +426,14 @@ samples, guidance on mobile development, and a full API reference.
     5. 添加TextField.onSearchSubmit
     6. 添加TextField.textInputAction:TextInputAction.search
     7. 删除`||true`
+
+### 4.32、 组件SearchBar封装-使用及优化
+
+    【操作步骤】
+    1. 在tabIndex使用
+    2. 在tabSearch使用
+    3. 在tabInfo使用
+    4. 优化焦点问题
+        1. 创建焦点对象FocusNode_focus,并实例化
+        2. 在TextField使用焦点对象
+        3. 在TextField onTap回调函数中通过_focus.unfocus()方法去焦点。

@@ -3,6 +3,7 @@ import 'package:hook_up_rent/pages/home/info/index.dart';
 import 'package:hook_up_rent/pages/home/tab_index/index_navigator.dart';
 import 'package:hook_up_rent/pages/home/tab_index/index_recommend.dart';
 import 'package:hook_up_rent/widgets/common_swiper.dart';
+import 'package:hook_up_rent/widgets/search_bar/index.dart';
 
 class TabIndex extends StatelessWidget {
   const TabIndex({Key? key}) : super(key: key);
@@ -11,7 +12,14 @@ class TabIndex extends StatelessWidget {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const Center(child: Text('tabIndex')),
+        title: SearchBar(
+          shwoLocation: true,
+          showMap: true,
+          onSearch: () {
+            Navigator.of(context).pushNamed('search');
+          },
+        ),
+        backgroundColor: Colors.white,
       ),
       body: ListView(children: const [
         CommonSwiper(),

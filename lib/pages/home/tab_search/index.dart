@@ -15,7 +15,13 @@ class _TabSearchState extends State<TabSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
-        title: const SearchBar(),
+        title: SearchBar(
+          shwoLocation: true,
+          showMap: true,
+          onSearch: () {
+            Navigator.of(context).pushNamed('search');
+          },
+        ),
         backgroundColor: Colors.white,
       ),
       body: Column(

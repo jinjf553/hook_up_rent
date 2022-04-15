@@ -30,6 +30,7 @@ class SearchBar extends StatefulWidget {
 class _SearchBarState extends State<SearchBar> {
   String _searchWord = '';
   late TextEditingController _controller;
+  FocusNode? _focus;
   void _onClean() {
     _controller.clear();
     setState(() {
@@ -40,6 +41,7 @@ class _SearchBarState extends State<SearchBar> {
   @override
   void initState() {
     _controller = TextEditingController(text: widget.inputValue);
+    _focus = FocusNode();
     super.initState();
   }
 
@@ -87,7 +89,14 @@ class _SearchBarState extends State<SearchBar> {
           margin: const EdgeInsets.only(right: 10.0),
           child: TextField(
             controller: _controller,
-            onTap: widget.onSearch != null ? widget.onSearch!() : () {},
+            focusNode: _focus,
+            onTap: () {
+              if (widget.onSearchSubmit == null) {
+                _focus!.unfocus();
+              }
+
+              widget.onSearch!();
+            },
             onSubmitted: widget.onSearchSubmit,
             textInputAction: TextInputAction.search,
             style: const TextStyle(fontSize: 14.0),
