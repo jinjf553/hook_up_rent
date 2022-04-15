@@ -462,7 +462,7 @@ samples, guidance on mobile development, and a full API reference.
         1. 完善appBar部分
         2. 完善body部分
 
-### 4.35、 首页-tabProfile-登录注册
+### 4.35、 首页-tabProfile-登录注册-未登录试图
 
     【操作步骤】
     1. 准备
@@ -475,3 +475,11 @@ samples, guidance on mobile development, and a full API reference.
     3. 测试和完善
         1. 测试效果
         2. 完善细节
+
+### 4.36、 首页-tabProfile-登录注册-已登录试图
+
+    【操作步骤】
+    1. 把内容显示部分抽提成函数
+    2. 根据登录状态使用函数
+    3. 修改已登录状态函数"https://tva1.sinaimg.cn/large/006y8mN6ly1g6tbnovh8jj30hr0hrq3l.jpg"
+    4. 测试
