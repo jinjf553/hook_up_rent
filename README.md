@@ -504,3 +504,12 @@ samples, guidance on mobile development, and a full API reference.
     3. 完成Item主体结构
     4. 测试
     5. 完善细节
+
+### 4.39、 首页-tabProfile-广告及资讯
+
+    【操作步骤】
+    1. 创建文件pages/home/tab_profile/advertisement.dart
+    2. 引入material依赖，添加无状态组件
+    3. 完善主体结构'https://tva1.sinaimg.cn/large/006y8mN6ly1g6te62n8f4j30j603vgou.jpg'
+    4. 测试
+    5. 完善细节
