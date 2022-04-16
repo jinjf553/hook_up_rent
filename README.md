@@ -604,3 +604,18 @@ samples, guidance on mobile development, and a full API reference.
     3. 完善点击事件处理
     4. 测试
     5. 优化CommonFormItem，调整Expanded位置
+
+### 4.49、 发布房源页-CommonRadioFormItem
+
+    【操作步骤】
+    1. 准备
+        1. 新建文件widgets/common_radio_form_item.dart
+        2. 添加material依赖，添加无状态组件，添加并初始化参数
+    2. 核心代码
+        1. 使用CommonFormItem完成基本结构label和contentBuilder属性
+        2. 在roomAdd页面使用CommonRadioFormItem
+        3. 完善contentBuilder
+        4. 处理选项及点击事件使用Radio
+        5. 完善细节
+    3. 测试
+        1. 让按钮可点击

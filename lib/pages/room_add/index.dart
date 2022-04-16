@@ -1,6 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/widgets/common_floating_action_button.dart';
 import 'package:hook_up_rent/widgets/common_form_item.dart';
+import 'package:hook_up_rent/widgets/common_radio_form_item.dart';
 import 'package:hook_up_rent/widgets/common_title.dart';
 
 class RoomAddPage extends StatefulWidget {
@@ -11,6 +12,8 @@ class RoomAddPage extends StatefulWidget {
 }
 
 class _RoomAddPageState extends State<RoomAddPage> {
+  int rentType = 0;
+  int decorationType = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -24,20 +27,20 @@ class _RoomAddPageState extends State<RoomAddPage> {
               return GestureDetector(
                 behavior: HitTestBehavior.translucent,
                 child: SizedBox(
-              height: 40.0,
-              child: Row(
-                mainAxisAlignment: MainAxisAlignment.spaceBetween,
-                children: const [
-                  Text(
-                    '请选择小区',
-                    style: TextStyle(fontSize: 16.0),
+                  height: 40.0,
+                  child: Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: const [
+                      Text(
+                        '请选择小区',
+                        style: TextStyle(fontSize: 16.0),
+                      ),
+                      Icon(Icons.keyboard_arrow_right)
+                    ],
                   ),
-                  Icon(Icons.keyboard_arrow_right)
-                ],
-              ),
                 ),
                 onTap: () {
-              Navigator.of(context).pushNamed('search');
+                  Navigator.of(context).pushNamed('search');
                 },
               );
             },
@@ -53,6 +56,26 @@ class _RoomAddPageState extends State<RoomAddPage> {
             hintText: '请输入房屋大小',
             suffixText: '平方米',
             controller: TextEditingController(),
+          ),
+          CommonRadioFormItem(
+            label: '租赁方式',
+            options: const ['合租', '整租'],
+            value: rentType,
+            onChanged: (index) {
+              setState(() {
+                rentType = index!;
+              });
+            },
+          ),
+          CommonRadioFormItem(
+            label: '装修',
+            options: const ['精装', '简装'],
+            value: decorationType,
+            onChanged: <ValueChanged>(index) {
+              setState(() {
+                decorationType = index;
+              });
+            },
           ),
           const CommonTitle('房屋头像'),
           const CommonTitle('房屋标题'),
