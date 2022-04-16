@@ -571,3 +571,12 @@ samples, guidance on mobile development, and a full API reference.
     3. 使用Scaffold完成页面主体结构
     4. 添加提交按钮
     5. 在路由中注册该页面
+
+### 4.45、 发布房源页-CommonTitle
+
+    【操作步骤】
+    1. 创建文件widgets/common_title.dart
+    2. 添加material依赖，添加无状态组件，添加title参数
+    3. 完成组件主体内容
+    4. 使用组件
+    5. 完善组件
