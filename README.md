@@ -541,3 +541,12 @@ samples, guidance on mobile development, and a full API reference.
         4. 添加body:TabBarView()
         5. 在Scaffold通过DefaultTabController关联Tabbar和TabBarView
     3. 测试
+
+### 4.42、 房屋管理页-发布按钮
+
+    【操作步骤】
+    1. 添加floatingActionButton属性
+    2. 完善发布按钮主体结构GestureDetector>Container>Center>Text
+    3. 修改floatingActionButtonLocation
+    4. 完善细节
+    5. 封装组件
