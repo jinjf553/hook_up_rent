@@ -595,3 +595,12 @@ samples, guidance on mobile development, and a full API reference.
         4. 文本框 实现
         5. 尾缀 实现
     3. 测试
+
+### 4.48、 发布房源页-CommonFormItem-实现小区选择
+
+    【操作步骤】
+    1. 添加CommonFormItem
+    2. 完善contentBuilder
+    3. 完善点击事件处理
+    4. 测试
+    5. 优化CommonFormItem，调整Expanded位置

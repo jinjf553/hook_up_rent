@@ -19,6 +19,30 @@ class _RoomAddPageState extends State<RoomAddPage> {
         children: [
           const CommonTitle('房源信息'),
           CommonFormItem(
+            label: '小区',
+            contentBuilder: (context) {
+              return GestureDetector(
+                behavior: HitTestBehavior.translucent,
+                child: SizedBox(
+              height: 40.0,
+              child: Row(
+                mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                children: const [
+                  Text(
+                    '请选择小区',
+                    style: TextStyle(fontSize: 16.0),
+                  ),
+                  Icon(Icons.keyboard_arrow_right)
+                ],
+              ),
+                ),
+                onTap: () {
+              Navigator.of(context).pushNamed('search');
+                },
+              );
+            },
+          ),
+          CommonFormItem(
             label: '租金',
             hintText: '请输入租金',
             suffixText: '元/月',

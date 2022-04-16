@@ -36,14 +36,14 @@ class CommonFormItem extends StatelessWidget {
                 label!,
                 style: const TextStyle(fontSize: 16.0, color: Colors.black87),
               )),
-          contentBuilder != null
-              ? contentBuilder!(context)
-              : Expanded(
-                  child: TextField(
-                  controller: controller,
-                  decoration: InputDecoration(
-                      hintText: hintText, border: InputBorder.none),
-                )),
+          Expanded(
+              child: contentBuilder != null
+                  ? contentBuilder!(context)
+                  : TextField(
+                      controller: controller,
+                      decoration: InputDecoration(
+                          hintText: hintText, border: InputBorder.none),
+                    )),
           if (suffix != null) suffix!,
           if (suffix == null && suffixText != null) Text(suffixText!)
         ],
