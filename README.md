@@ -550,3 +550,15 @@ samples, guidance on mobile development, and a full API reference.
     3. 修改floatingActionButtonLocation
     4. 完善细节
     5. 封装组件
+
+### 4.43、 房屋管理页-分析
+
+    【结论】
+    1. CommonTitle
+    2. CommonFormItem
+    3. CommonRadioFormItem
+    4. CommonSelectFormItem
+    5. CommonPicker
+    6. CommonImagePicker
+    7. CommonCheckButton
+    8. RoomAppliance
