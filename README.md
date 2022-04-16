@@ -580,3 +580,18 @@ samples, guidance on mobile development, and a full API reference.
     3. 完成组件主体内容
     4. 使用组件
     5. 完善组件
+
+### 4.47、 发布房源页-CommonFormItem-实现
+
+    【操作步骤】
+    1. 准备
+        1. 创建文件widgets/common_form_item.dart
+        2. 添加依赖，编写无状态组件，添加并初始化参数
+        3. 使用组件
+    2. 核心代码
+        1. 主体结构 实现
+        2. 底线 实现
+        3. label 实现
+        4. 文本框 实现
+        5. 尾缀 实现
+    3. 测试
