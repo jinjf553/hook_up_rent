@@ -542,7 +542,7 @@ samples, guidance on mobile development, and a full API reference.
         5. 在Scaffold通过DefaultTabController关联Tabbar和TabBarView
     3. 测试
 
-### 4.42、 房屋管理页-发布按钮
+### 4.42、 发布房源页-发布按钮
 
     【操作步骤】
     1. 添加floatingActionButton属性
@@ -551,7 +551,7 @@ samples, guidance on mobile development, and a full API reference.
     4. 完善细节
     5. 封装组件
 
-### 4.43、 房屋管理页-分析
+### 4.43、 发布房源页-分析
 
     【结论】
     1. CommonTitle
@@ -562,3 +562,12 @@ samples, guidance on mobile development, and a full API reference.
     6. CommonImagePicker
     7. CommonCheckButton
     8. RoomAppliance
+
+### 4.44、 发布房源页-主体结构
+
+    【操作步骤】
+    1. 创建文件pages/room_add/index.dart
+    2. 添加material依赖，添加有状态组件
+    3. 使用Scaffold完成页面主体结构
+    4. 添加提交按钮
+    5. 在路由中注册该页面
