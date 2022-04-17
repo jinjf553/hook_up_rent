@@ -7,6 +7,7 @@ import 'package:hook_up_rent/widgets/common_image_picker.dart';
 import 'package:hook_up_rent/widgets/common_radio_form_item.dart';
 import 'package:hook_up_rent/widgets/common_select_form_item.dart';
 import 'package:hook_up_rent/widgets/common_title.dart';
+import 'package:hook_up_rent/widgets/room_appliance.dart';
 
 class RoomAddPage extends StatefulWidget {
   const RoomAddPage({Key? key}) : super(key: key);
@@ -131,6 +132,7 @@ class _RoomAddPageState extends State<RoomAddPage> {
             ),
           ),
           const CommonTitle('房屋配置'),
+          const RoomAppliance(),
           const CommonTitle('房屋描述'),
           Container(
             margin: const EdgeInsets.only(bottom: 100.0),

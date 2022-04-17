@@ -718,3 +718,16 @@ samples, guidance on mobile development, and a full API reference.
     2. 创建文件widgets/room_appliance.dart
     3. 准备数据
     4. CommonCheckButton实现
+
+### 4.58、 发布房源页-房屋配置-实现
+
+    【操作步骤】
+    1. 准备
+        1. 添加material依赖
+        2. 添加有状态组件
+        3. 添加并初始化参数
+    2. 核心编码
+        1. 完成主体结构
+        2. 使用RoomAppliance
+        3. 添加点击事件
+    3. 测试&完善
