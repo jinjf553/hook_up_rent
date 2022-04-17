@@ -21,6 +21,8 @@ class _RoomAddPageState extends State<RoomAddPage> {
   int roomType = 0;
   int floor = 0;
   int oriented = 0;
+  var titleController = TextEditingController();
+  var descController = TextEditingController();
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -119,8 +121,27 @@ class _RoomAddPageState extends State<RoomAddPage> {
             onChange: (List<File> files) {},
           ),
           const CommonTitle('房屋标题'),
+          Container(
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            child: TextField(
+              controller: titleController,
+              decoration: const InputDecoration(
+                  border: InputBorder.none,
+                  hintText: '请输入标题(例如:整租,小区名2室2000元)'),
+            ),
+          ),
           const CommonTitle('房屋配置'),
           const CommonTitle('房屋描述'),
+          Container(
+            margin: const EdgeInsets.only(bottom: 100.0),
+            padding: const EdgeInsets.symmetric(horizontal: 10.0),
+            child: TextField(
+              controller: descController,
+              maxLines: 10,
+              decoration: const InputDecoration(
+                  border: InputBorder.none, hintText: '请输入房屋描述信息'),
+            ),
+          ),
         ],
       ),
       floatingActionButton: CommonFloatingActionButton('提交', () {}),
