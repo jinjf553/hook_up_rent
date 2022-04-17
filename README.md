@@ -731,3 +731,5 @@ samples, guidance on mobile development, and a full API reference.
         2. 使用RoomAppliance
         3. 添加点击事件
     3. 测试&完善
+
+### 4.59、 房屋详情页-分析
