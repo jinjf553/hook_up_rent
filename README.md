@@ -710,3 +710,11 @@ samples, guidance on mobile development, and a full API reference.
         1. 提示文案：请输入房屋描述信息
     3. 添加controller
     4. 测试及细节完善
+
+### 4.57、 发布房源页-房屋配置-分析
+
+    【操作步骤】
+    1. 准备图标
+    2. 创建文件widgets/room_appliance.dart
+    3. 准备数据
+    4. CommonCheckButton实现
