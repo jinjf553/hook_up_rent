@@ -654,3 +654,15 @@ samples, guidance on mobile development, and a full API reference.
     3. 测试及完善
         1. 使用CommonPicker
         2. 完善细节
+
+### 4.53、 发布房源页-CommonPicker-细节和事件
+
+    【操作步骤】
+    1. 细节
+        1. 半屏高度
+    2. 事件
+        1. 在roomAdd页面添加状态
+        2. 添加事件处理函数
+        3. 完善CommonSelectFormItem的事件处理部分
+        4. 完善CommonPicker的事件处理部分
+    3. 测试

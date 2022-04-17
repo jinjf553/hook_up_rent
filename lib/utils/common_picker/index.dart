@@ -6,6 +6,7 @@ class CommonPicker {
     BuildContext? context,
     List<String>? options,
     int? value,
+    double? height = 300,
   }) {
     return showCupertinoModalPopup<int>(
         context: context!,
@@ -13,9 +14,11 @@ class CommonPicker {
           var buttonTextStyle = TextStyle(
               color: Theme.of(context).primaryColor,
               fontWeight: FontWeight.w600);
+          FixedExtentScrollController controller =
+              FixedExtentScrollController(initialItem: value!);
           return Container(
             color: Colors.grey,
-            height: 300.0,
+            height: height,
             child: Column(
               children: [
                 Container(
@@ -25,14 +28,18 @@ class CommonPicker {
                       mainAxisAlignment: MainAxisAlignment.spaceBetween,
                       children: [
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pop();
+                          },
                           child: Text(
                             '取消',
                             style: buttonTextStyle,
                           ),
                         ),
                         TextButton(
-                          onPressed: () {},
+                          onPressed: () {
+                            Navigator.of(context).pop(controller.selectedItem);
+                          },
                           child: Text(
                             '确定',
                             style: buttonTextStyle,
@@ -42,6 +49,7 @@ class CommonPicker {
                 ),
                 Expanded(
                     child: CupertinoPicker(
+                  scrollController: controller,
                   backgroundColor: Theme.of(context).scaffoldBackgroundColor,
                   itemExtent: 32.0,
                   onSelectedItemChanged: (int val) {},

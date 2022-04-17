@@ -17,21 +17,21 @@ class CommonSelectFormItem extends StatelessWidget {
     return CommonFormItem(
       label: label,
       contentBuilder: (context) {
-        return SizedBox(
-          height: 40.0,
-          child: GestureDetector(
-            onTap: () {
-              var result = CommonPicker.showPicker(
-                  context: context, options: options, value: value);
-              result!.then((selectedValue) {
-                if (value != selectedValue &&
-                    selectedValue != null &&
-                    onChange != null) {
-                  onChange!(selectedValue);
-                }
-              });
-            },
-            behavior: HitTestBehavior.translucent,
+        return GestureDetector(
+          onTap: () {
+            var result = CommonPicker.showPicker(
+                context: context, options: options, value: value);
+            result!.then((selectedValue) {
+              if (value != selectedValue &&
+                  selectedValue != null &&
+                  onChange != null) {
+                onChange!(selectedValue);
+              }
+            });
+          },
+          behavior: HitTestBehavior.translucent,
+          child: SizedBox(
+            height: 40.0,
             child: Row(
               mainAxisAlignment: MainAxisAlignment.spaceBetween,
               children: [

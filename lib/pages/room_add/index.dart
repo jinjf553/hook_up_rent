@@ -1,5 +1,4 @@
 import 'package:flutter/material.dart';
-import 'package:hook_up_rent/utils/common_picker/index.dart';
 import 'package:hook_up_rent/widgets/common_floating_action_button.dart';
 import 'package:hook_up_rent/widgets/common_form_item.dart';
 import 'package:hook_up_rent/widgets/common_radio_form_item.dart';
@@ -16,6 +15,9 @@ class RoomAddPage extends StatefulWidget {
 class _RoomAddPageState extends State<RoomAddPage> {
   int rentType = 0;
   int decorationType = 0;
+  int roomType = 0;
+  int floor = 0;
+  int oriented = 0;
   @override
   Widget build(BuildContext context) {
     return Scaffold(
@@ -71,20 +73,32 @@ class _RoomAddPageState extends State<RoomAddPage> {
           ),
           CommonSelectFormItem(
             label: '户型',
-            value: 0,
-            onChange: (val) {},
+            value: roomType,
+            onChange: (val) {
+              setState(() {
+                roomType = val!;
+              });
+            },
             options: const ['一室', '二室', '三室', '四室'],
           ),
           CommonSelectFormItem(
             label: '楼层',
-            value: 0,
-            onChange: (val) {},
+            value: floor,
+            onChange: (val) {
+              setState(() {
+                floor = val!;
+              });
+            },
             options: const ['高楼层', '中楼层', '低楼层'],
           ),
           CommonSelectFormItem(
             label: '朝向',
-            value: 0,
-            onChange: (val) {},
+            value: oriented,
+            onChange: (val) {
+              setState(() {
+                oriented = val!;
+              });
+            },
             options: const ['东', '南', '西', '北'],
           ),
           CommonRadioFormItem(
