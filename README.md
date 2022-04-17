@@ -666,3 +666,19 @@ samples, guidance on mobile development, and a full API reference.
         3. 完善CommonSelectFormItem的事件处理部分
         4. 完善CommonPicker的事件处理部分
     3. 测试
+
+### 4.54、 发布房源页-房屋图像-主体结构
+
+    【操作步骤】
+    1. 准备
+        1. 添加文件widgets/common_image_picker.dart
+        2. 添加material依赖
+        3. 准备测试图片数据
+        4. 创建有状态组件
+        5. 在roomAdd页面使用CommonImagePicker
+    2. 核心编码
+        1. 准备图片宽高
+        2. 准备添加图片按钮
+        3. 准备图片wrapper函数
+        4. 展示图片及添加按钮
+    3. 测试
