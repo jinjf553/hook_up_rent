@@ -2,6 +2,7 @@ import 'package:flutter/material.dart';
 import 'package:hook_up_rent/widgets/common_floating_action_button.dart';
 import 'package:hook_up_rent/widgets/common_form_item.dart';
 import 'package:hook_up_rent/widgets/common_radio_form_item.dart';
+import 'package:hook_up_rent/widgets/common_select_form_item.dart';
 import 'package:hook_up_rent/widgets/common_title.dart';
 
 class RoomAddPage extends StatefulWidget {
@@ -66,6 +67,24 @@ class _RoomAddPageState extends State<RoomAddPage> {
                 rentType = index!;
               });
             },
+          ),
+          CommonSelectFormItem(
+            label: '户型',
+            value: 0,
+            onChange: (val) {},
+            options: const ['一室', '二室', '三室', '四室'],
+          ),
+          CommonSelectFormItem(
+            label: '楼层',
+            value: 0,
+            onChange: (val) {},
+            options: const ['高楼层', '中楼层', '低楼层'],
+          ),
+          CommonSelectFormItem(
+            label: '朝向',
+            value: 0,
+            onChange: (val) {},
+            options: const ['东', '南', '西', '北'],
           ),
           CommonRadioFormItem(
             label: '装修',

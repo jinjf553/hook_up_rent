@@ -619,3 +619,15 @@ samples, guidance on mobile development, and a full API reference.
         5. 完善细节
     3. 测试
         1. 让按钮可点击
+
+### 4.50、 发布房源页-CommonSelectFormItem
+
+    【操作步骤】
+    1. 准备
+        1. 新建文件widgets/common_select_form_item.dart
+        2. 添加material依赖，添加无状态组件，添加并初始化参数
+    2. 核心代码
+        1. 使用CommonFormItem完成基本结构
+        2. 在roomAdd页面使用CommonSelectFormItem
+        3. 完善细节
+    3. 测试
