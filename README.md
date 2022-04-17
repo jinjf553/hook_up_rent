@@ -682,3 +682,21 @@ samples, guidance on mobile development, and a full API reference.
         3. 准备图片wrapper函数
         4. 展示图片及添加按钮
     3. 测试
+
+### 4.55、 发布房源页-房屋图像-添加删除
+
+    【操作步骤】
+    1. 准备
+        1. 安装image_picker依赖
+        2. 引入image_picker依赖
+    2. 核心代码
+        1. 实现添加图片逻辑
+            1. 添加状态files
+            2. 图片数据使用files
+            3. 添加方法pickImage
+            4. addButton添加事件
+            5. 测试
+        2. 实现图片删除逻辑
+            1. 添加删除图标
+            2. 实现删除事件
+            3. 测试
