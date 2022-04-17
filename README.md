@@ -631,3 +631,10 @@ samples, guidance on mobile development, and a full API reference.
         2. 在roomAdd页面使用CommonSelectFormItem
         3. 完善细节
     3. 测试
+
+### 4.51、 发布房源页-CommonPicker-分析
+
+    【分析结论】
+    1. CommonPicker.showPicker是一个class的静态方法
+    2. 半屏弹窗——showCupertinoModalPopup
+    3. 选择区域——CupertinoPicker
