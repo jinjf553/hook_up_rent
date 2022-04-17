@@ -768,3 +768,12 @@ samples, guidance on mobile development, and a full API reference.
     3. 添加 标签
     4. 添加 分割线
     5. 测试
+
+### 4.63、 房屋详情页面-房屋详细信息
+
+    【操作步骤】
+    1. 添加Container Wrap结构
+    2. 实现【面积】部分
+    3. 重构组件
+    4. 实现【楼层】【房型】【装修】
+    5. 测试

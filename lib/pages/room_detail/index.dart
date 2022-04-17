@@ -72,6 +72,18 @@ class _RoomDetailPageState extends State<RoomDetailPage> {
               ),
             ),
             const Divider(color: Colors.grey, indent: 10.0, endIndent: 10.0),
+            Container(
+              padding: const EdgeInsets.only(left: 10.0, top: 6.0, bottom: 6.0),
+              child: Wrap(
+                runSpacing: 20.0,
+                children: [
+                  BaseInfoItem(content: '面积：${data.size}平米'),
+                  BaseInfoItem(content: '楼层：${data.floor}'),
+                  BaseInfoItem(content: '房型：${data.roomType}'),
+                  const BaseInfoItem(content: '装修：精装'),
+                ],
+              ),
+            ),
             const CommonTitle('房屋配置'),
             const CommonTitle('房屋概况'),
             const CommonTitle('猜你喜欢'),
@@ -147,6 +159,23 @@ class _RoomDetailPageState extends State<RoomDetailPage> {
           ),
         )
       ]),
+    );
+  }
+}
+
+class BaseInfoItem extends StatelessWidget {
+  final String? content;
+
+  const BaseInfoItem({Key? key, this.content}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    return SizedBox(
+      child: Text(
+        content!,
+        style: const TextStyle(fontSize: 16.0),
+      ),
+      width: (MediaQuery.of(context).size.width - 3 * 10.0) / 2,
     );
   }
 }
