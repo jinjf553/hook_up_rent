@@ -759,3 +759,12 @@ samples, guidance on mobile development, and a full API reference.
     3. 添加'预约看房'按钮
     4. 添加收藏事件及展示
     5. 测试
+
+### 4.62、 房屋详情页面-房屋图片&房屋基本信息
+
+    【操作步骤】
+    1. 添加 图片
+    2. 添加 价格
+    3. 添加 标签
+    4. 添加 分割线
+    5. 测试

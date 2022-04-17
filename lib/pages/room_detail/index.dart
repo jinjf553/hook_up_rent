@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/room_detail/data.dart';
+import 'package:hook_up_rent/widgets/common_swiper.dart';
+import 'package:hook_up_rent/widgets/common_tag.dart';
 import 'package:hook_up_rent/widgets/common_title.dart';
 import 'package:share_plus/share_plus.dart';
 
@@ -42,7 +44,34 @@ class _RoomDetailPageState extends State<RoomDetailPage> {
       body: Stack(children: [
         ListView(
           children: [
+            CommonSwiper(
+              images: data.houseImgs!,
+            ),
             CommonTitle(data.title!),
+            Container(
+              padding: const EdgeInsets.only(left: 10.0),
+              child: Row(
+                crossAxisAlignment: CrossAxisAlignment.end,
+                children: [
+                  Text(
+                    data.price.toString(),
+                    style: const TextStyle(fontSize: 20.0, color: Colors.pink),
+                  ),
+                  const Text(
+                    '元/月(押一付三)',
+                    style: TextStyle(fontSize: 14.0, color: Colors.pink),
+                  )
+                ],
+              ),
+            ),
+            Container(
+              padding: const EdgeInsets.only(left: 10.0, top: 6.0, bottom: 6.0),
+              child: Wrap(
+                spacing: 4.0,
+                children: data.tags!.map((item) => CommonTag(item)).toList(),
+              ),
+            ),
+            const Divider(color: Colors.grey, indent: 10.0, endIndent: 10.0),
             const CommonTitle('房屋配置'),
             const CommonTitle('房屋概况'),
             const CommonTitle('猜你喜欢'),
