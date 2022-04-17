@@ -638,3 +638,19 @@ samples, guidance on mobile development, and a full API reference.
     1. CommonPicker.showPicker是一个class的静态方法
     2. 半屏弹窗——showCupertinoModalPopup
     3. 选择区域——CupertinoPicker
+
+### 4.52、 发布房源页-CommonPicker-主体结构
+
+    【操作步骤】
+    1. 准备
+        1. 新建文件utils/common_picker/index.dart
+        2. 引入material和cupertino依赖
+        3. 完善类及静态方法的主体结构
+        4. 在CommonSelectFormItem中使用CommonPicker
+    2. 核心编码
+        1. 使用showCupertinoModalPopup返回Future
+        2. 完善内容区header部分
+        3. 使用CupertinoPicker完善内容区body部分
+    3. 测试及完善
+        1. 使用CommonPicker
+        2. 完善细节
