@@ -750,3 +750,12 @@ samples, guidance on mobile development, and a full API reference.
         1. 修改widgets/room_list_item_widget.dart添加点击事件
         2. 修改pages/home/tab_search/dataList.dart修改id
         3. 测试
+
+### 4.61、 房屋详情页面-底部按钮
+
+    【操作步骤】
+    1. 添加收藏按钮
+    2. 添加'联系房东'按钮
+    3. 添加'预约看房'按钮
+    4. 添加收藏事件及展示
+    5. 测试
