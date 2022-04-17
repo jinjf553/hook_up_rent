@@ -788,3 +788,14 @@ samples, guidance on mobile development, and a full API reference.
     5. 在pages/room_detail/index.dart使用RoomApplianceList
     6. 完善细节
     7. 测试
+
+### 4.65、 房屋详情页面-房屋概况&猜你喜欢
+
+    【操作步骤】
+    1. 添加container和container.padding,Column
+    2. 添加Text用于显示房屋概况
+    3. 添加按钮区域(收起/举报)
+    4. 添加状态showAllText=false和showTextTool变量。
+    5. 根据showAllText和showTextTool显示相应内容
+    6. 添加事件控制showAllText;
+    7. 添加Info()

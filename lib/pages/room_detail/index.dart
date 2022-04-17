@@ -1,4 +1,5 @@
 import 'package:flutter/material.dart';
+import 'package:hook_up_rent/pages/home/info/index.dart';
 import 'package:hook_up_rent/pages/home/tab_profile/function_button_data.dart';
 import 'package:hook_up_rent/pages/room_detail/data.dart';
 import 'package:hook_up_rent/widgets/common_swiper.dart';
@@ -20,6 +21,7 @@ class RoomDetailPage extends StatefulWidget {
 class _RoomDetailPageState extends State<RoomDetailPage> {
   late RoomDetailData data;
   bool isLike = false;
+  bool showAllText = false;
 
   @override
   void initState() {
@@ -32,6 +34,7 @@ class _RoomDetailPageState extends State<RoomDetailPage> {
   @override
   Widget build(BuildContext context) {
     if (data == null as RoomDetailData) return Container();
+    bool showTextTool = data.subTitle!.length > 100;
     return Scaffold(
       appBar: AppBar(
         title: Text(data.title!),
@@ -91,7 +94,45 @@ class _RoomDetailPageState extends State<RoomDetailPage> {
               list: data.applicances,
             ),
             const CommonTitle('房屋概况'),
+            Container(
+              child: Column(
+                crossAxisAlignment: CrossAxisAlignment.start,
+                children: [
+                  Text(
+                    data.subTitle ?? '暂无房屋概况',
+                    maxLines: showAllText ? null : 5,
+                  ),
+                  Row(
+                    mainAxisAlignment: MainAxisAlignment.spaceBetween,
+                    children: [
+                      showTextTool
+                          ? GestureDetector(
+                              onTap: () {
+                                setState(() {
+                                  showAllText = !showAllText;
+                                });
+                              },
+                              child: Row(
+                                children: [
+                                  Text(showAllText ? '收起' : '展开'),
+                                  Icon(showAllText
+                                      ? Icons.keyboard_arrow_up
+                                      : Icons.keyboard_arrow_down),
+                                ],
+                              ),
+                            )
+                          : Container(),
+                      const Text('举报')
+                    ],
+                  )
+                ],
+              ),
+            ),
             const CommonTitle('猜你喜欢'),
+            const Info(),
+            Container(
+              height: 100.0,
+            )
           ],
         ),
         Positioned(
