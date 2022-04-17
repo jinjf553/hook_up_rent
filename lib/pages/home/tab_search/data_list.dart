@@ -78,6 +78,6 @@ const List<RoomListItemData> dataList = [
       imageUrl:
           "https://tva1.sinaimg.cn/large/006y8mN6ly1g6wtu9t1kxj30lo0c7796.jpg",
       price: 6000,
-      id: 'roomDetail/1',
+      id: '17',
       tags: ["近地铁", "随时看房"]),
 ];

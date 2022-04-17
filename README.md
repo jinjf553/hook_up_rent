@@ -733,3 +733,20 @@ samples, guidance on mobile development, and a full API reference.
     3. 测试&完善
 
 ### 4.59、 房屋详情页-分析
+
+### 4.60、 房屋详情页面-主体结构
+
+    【操作步骤】
+    1. 准备
+        1. 将RoomDetailPage转成有状态组件
+        2. 安装share_plus: ^4.0.4依赖
+        3. 添加pages/room_detail/data.dart,并粘贴之前准备的代码
+    2. 核心编码
+        1. 完善appBar部分主体结构
+        2. 添加分享按钮
+        3. 使用Stack完善body的主体结构
+        4. 完善底部按钮区域
+    3. 测试&完善细节
+        1. 修改widgets/room_list_item_widget.dart添加点击事件
+        2. 修改pages/home/tab_search/dataList.dart修改id
+        3. 测试

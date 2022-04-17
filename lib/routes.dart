@@ -17,7 +17,7 @@ class Routes {
   static var home = "/";
   static var login = '/login';
   static var register = '/register';
-  static var roomDetail = '/room/:roomId';
+  static var roomDetail = '/roomDetail/:roomId';
   static var setting = '/setting';
   static var roomManage = '/roomManage';
   static var roomAdd = '/roomAdd';
