@@ -777,3 +777,14 @@ samples, guidance on mobile development, and a full API reference.
     3. 重构组件
     4. 实现【楼层】【房型】【装修】
     5. 测试
+
+### 4.64、 房屋详情页面-房屋配置
+
+    【操作步骤】
+    1. 打开文件widgets/room_appliance.dart
+    2. 创建无状态组件RoomApplianceList
+    3. 添加并初始化参数final List<String> list;
+    4. 完善内容部分
+    5. 在pages/room_detail/index.dart使用RoomApplianceList
+    6. 完善细节
+    7. 测试

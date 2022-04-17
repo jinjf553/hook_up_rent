@@ -1,8 +1,10 @@
 import 'package:flutter/material.dart';
+import 'package:hook_up_rent/pages/home/tab_profile/function_button_data.dart';
 import 'package:hook_up_rent/pages/room_detail/data.dart';
 import 'package:hook_up_rent/widgets/common_swiper.dart';
 import 'package:hook_up_rent/widgets/common_tag.dart';
 import 'package:hook_up_rent/widgets/common_title.dart';
+import 'package:hook_up_rent/widgets/room_appliance.dart';
 import 'package:share_plus/share_plus.dart';
 
 var bottomButtonStyle = const TextStyle(fontSize: 20.0, color: Colors.white);
@@ -85,6 +87,9 @@ class _RoomDetailPageState extends State<RoomDetailPage> {
               ),
             ),
             const CommonTitle('房屋配置'),
+            RoomApplianceList(
+              list: data.applicances,
+            ),
             const CommonTitle('房屋概况'),
             const CommonTitle('猜你喜欢'),
           ],

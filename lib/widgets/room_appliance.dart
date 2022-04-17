@@ -74,3 +74,38 @@ class _RoomApplianceState extends State<RoomAppliance> {
     );
   }
 }
+
+class RoomApplianceList extends StatelessWidget {
+  final List<String>? list;
+
+  const RoomApplianceList({Key? key, this.list}) : super(key: key);
+
+  @override
+  Widget build(BuildContext context) {
+    var showList =
+        _dataList.where((item) => list!.contains(item.title)).toList();
+    if (showList.isEmpty) {
+      return Container(
+        padding: const EdgeInsets.only(left: 10.0),
+        child: const Text('暂无房屋配置信息'),
+      );
+    }
+    return Wrap(
+      runSpacing: 30.0,
+      children: showList.map((item) {
+        return SizedBox(
+          width: MediaQuery.of(context).size.width / 5,
+          child: Column(
+            children: [
+              Icon(
+                IconData(item.iconPoint, fontFamily: Config.commonIcon),
+                size: 40.0,
+              ),
+              Text(item.title),
+            ],
+          ),
+        );
+      }).toList(),
+    );
+  }
+}
