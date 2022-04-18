@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/tab_search/data_list.dart';
+import 'package:hook_up_rent/pages/home/tab_search/filter_bar/filter_drawer.dart';
 import 'package:hook_up_rent/pages/home/tab_search/filter_bar/index.dart';
 import 'package:hook_up_rent/widgets/room_list_item_widget.dart';
 import 'package:hook_up_rent/widgets/search_bar/index.dart';
@@ -15,7 +16,9 @@ class _TabSearchState extends State<TabSearch> {
   @override
   Widget build(BuildContext context) {
     return Scaffold(
+      endDrawer: const FilterDrawer(),
       appBar: AppBar(
+        actions: [Container()],
         elevation: 0,
         title: SearchBar(
           shwoLocation: true,

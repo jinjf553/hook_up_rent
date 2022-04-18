@@ -825,3 +825,18 @@ samples, guidance on mobile development, and a full API reference.
     5. 完成【区域】选择的picker部分
     6. 参照【区域】完成【方式】和【租金】的picker部分
     7. 【筛选】先使用空白函数
+
+### 4.69、 filterBar-drawer部分-展示部分
+
+    【操作步骤】
+    1. 准备
+        1. 创建文件pages/home/tab_search/filter_bar/filter_drawer.dart
+        2. 添加material依赖，添加无状态组件
+    2. 核心编码
+        1. 实现页面基本结构
+        2. 在tabSearch页面中使用FilterDrawer
+        3. 实现选项按钮
+        4. 将选项按钮提取成组件FilterDrawerItem
+    3. 完善细节
+        1. 隐藏Drawer按钮
+        2. 打开Drawer

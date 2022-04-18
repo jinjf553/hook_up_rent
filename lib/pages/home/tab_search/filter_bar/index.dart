@@ -95,7 +95,9 @@ class _FilterBarState extends State<FilterBar> {
     );
   }
 
-  _onFilterChange(context) {}
+  _onFilterChange(context) {
+    Scaffold.of(context).openEndDrawer();
+  }
 
   _onChange() {
     if (widget.onChange != null) {
