@@ -814,3 +814,14 @@ samples, guidance on mobile development, and a full API reference.
         2. 在tabSearch页面中使用Filter_bar
         3. 编写filterBar的item组件
         4. 使用item组件
+
+### 4.68、 filterBar-picker部分
+
+    【操作步骤】
+    1. 添加4个按钮的激活状态
+    2. 添加4个结果值
+    3. 添加4个相应事件
+    4. 添加_onChange方法用于通知FilterBar的父组件
+    5. 完成【区域】选择的picker部分
+    6. 参照【区域】完成【方式】和【租金】的picker部分
+    7. 【筛选】先使用空白函数

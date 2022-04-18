@@ -9,9 +9,7 @@ class FilterBarResult {
       {required this.areaId,
       required this.priceId,
       required this.rentTypeId,
-      required this.moreIds,
-      required String priceTypeId,
-      required List<String> moreId});
+      required this.moreIds});
 }
 
 //通用类型
