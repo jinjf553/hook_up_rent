@@ -799,3 +799,5 @@ samples, guidance on mobile development, and a full API reference.
     5. 根据showAllText和showTextTool显示相应内容
     6. 添加事件控制showAllText;
     7. 添加Info()
+
+### 4.66、 filterBar-分析
