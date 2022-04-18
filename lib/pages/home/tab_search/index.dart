@@ -1,5 +1,6 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/tab_search/data_list.dart';
+import 'package:hook_up_rent/pages/home/tab_search/filter_bar/index.dart';
 import 'package:hook_up_rent/widgets/room_list_item_widget.dart';
 import 'package:hook_up_rent/widgets/search_bar/index.dart';
 
@@ -15,6 +16,7 @@ class _TabSearchState extends State<TabSearch> {
   Widget build(BuildContext context) {
     return Scaffold(
       appBar: AppBar(
+        elevation: 0,
         title: SearchBar(
           shwoLocation: true,
           showMap: true,
@@ -26,9 +28,11 @@ class _TabSearchState extends State<TabSearch> {
       ),
       body: Column(
         children: [
-          const SizedBox(
-            height: 40.0,
-            child: Text('filterBar'),
+          SizedBox(
+            height: 41.0,
+            child: FilterBar(
+              onChange: (data) {},
+            ),
           ),
           Expanded(
             child: ListView(

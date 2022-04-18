@@ -801,3 +801,16 @@ samples, guidance on mobile development, and a full API reference.
     7. 添加Info()
 
 ### 4.66、 filterBar-分析
+
+### 4.67、 filterBar-展示区域
+
+    【操作步骤】
+    1. 准备
+        1. 新建文件pages/home/tab_search/filter_bar/data.dart,填充数据
+        2. 新建文件pages/home/tab_search/filter_bar/index.dart
+        3. 引入material依赖，创建有状态组件，添加并初始化参数
+    2. 核心编码
+        1. 编写基本结构，解决外边框样式问题
+        2. 在tabSearch页面中使用Filter_bar
+        3. 编写filterBar的item组件
+        4. 使用item组件
