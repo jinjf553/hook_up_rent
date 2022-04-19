@@ -1,5 +1,7 @@
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/tab_search/filter_bar/data.dart';
+import 'package:hook_up_rent/scoped_model/room_filter.dart';
+import 'package:hook_up_rent/utils/scoped_model_helper.dart';
 import 'package:hook_up_rent/widgets/common_title.dart';
 
 class FilterDrawer extends StatelessWidget {
@@ -7,17 +9,42 @@ class FilterDrawer extends StatelessWidget {
 
   @override
   Widget build(BuildContext context) {
-    List<String> selectIds = ['11', 'aa', 'bb'];
+    Map<String, List<GeneralType>> dataList =
+        ScopedModelHelper.getModel<FilterBarModel>(context).dataList;
+    roomTypeList = dataList['_roomTypeList']!;
+    orientedList = dataList['_orientedList']!;
+    floorList = dataList['_floorList']!;
+    List<String> selectedIds =
+        ScopedModelHelper.getModel<FilterBarModel>(context)
+            .selectedList
+            .toList();
+    _onChange(val) {
+      ScopedModelHelper.getModel<FilterBarModel>(context)
+          .selectedListToggleItem(val);
+    }
+
     return Drawer(
       child: SafeArea(
           child: ListView(
         children: [
           const CommonTitle('户型'),
-          FilterDrawerItem(list: roomTypeList, selectIds: selectIds),
+          FilterDrawerItem(
+            list: roomTypeList,
+            selectIds: selectedIds,
+            onChange: _onChange,
+          ),
           const CommonTitle('朝向'),
-          FilterDrawerItem(list: orientedList, selectIds: selectIds),
+          FilterDrawerItem(
+            list: orientedList,
+            selectIds: selectedIds,
+            onChange: _onChange,
+          ),
           const CommonTitle('楼层'),
-          FilterDrawerItem(list: floorList, selectIds: selectIds),
+          FilterDrawerItem(
+            list: floorList,
+            selectIds: selectedIds,
+            onChange: _onChange,
+          ),
         ],
       )),
     );

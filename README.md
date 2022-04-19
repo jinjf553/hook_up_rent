@@ -863,3 +863,14 @@ samples, guidance on mobile development, and a full API reference.
     2. 添加scopedModel和material依赖
     3. 实现类基本结构
     4. 实现静态方法getModel
+
+### 4.73、 filterBar-drawer部分-ScopedModel
+
+    【操作步骤】
+    1. application中添加Model
+    2. 在FilterBar的initState生命周期set dataList(Map<String, List<String>> data)
+    3. 在FilterBar的didChangeDependencies生命周期Set<String> get selectedList
+    4. 在FilterDrawer的build函数中Map<String, List<GeneralType>> get dataList
+    5. 在FilterDrawer的Item点击事件中selectedListToggleItem(String data)
+    6. 测试
+    7. 优化

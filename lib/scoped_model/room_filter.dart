@@ -35,5 +35,6 @@ class FilterBarModel extends Model {
     } else {
       _selectedList.add(data);
     }
+    notifyListeners();
   }
 }

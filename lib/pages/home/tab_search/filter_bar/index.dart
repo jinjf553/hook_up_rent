@@ -1,7 +1,11 @@
+import 'dart:async';
+
 import 'package:flutter/material.dart';
 import 'package:hook_up_rent/pages/home/tab_search/filter_bar/data.dart';
 import 'package:hook_up_rent/pages/home/tab_search/filter_bar/item.dart';
+import 'package:hook_up_rent/scoped_model/room_filter.dart';
 import 'package:hook_up_rent/utils/common_picker/index.dart';
+import 'package:hook_up_rent/utils/scoped_model_helper.dart';
 
 class FilterBar extends StatefulWidget {
   final ValueChanged<FilterBarResult>? onChange;
@@ -100,13 +104,37 @@ class _FilterBarState extends State<FilterBar> {
   }
 
   _onChange() {
+    Set<String> selectedList =
+        ScopedModelHelper.getModel<FilterBarModel>(context).selectedList;
     if (widget.onChange != null) {
       widget.onChange!(FilterBarResult(
           areaId: areaId,
           priceId: priceId,
           rentTypeId: rentTypeId,
-          moreIds: moreIds));
+          moreIds: selectedList.toList()));
     }
+  }
+
+  _getData() {
+    Map<String, List<GeneralType>> dataList = <String, List<GeneralType>>{};
+    dataList['_roomTypeList'] = roomTypeList;
+    dataList['_orientedList'] = orientedList;
+    dataList['_floorList'] = floorList;
+    ScopedModelHelper.getModel<FilterBarModel>(context).dataList = dataList;
+  }
+
+  @override
+  void initState() {
+    Timer.run(() {
+      _getData();
+    });
+    super.initState();
+  }
+
+  @override
+  void didChangeDependencies() {
+    _onChange();
+    super.didChangeDependencies();
   }
 
   @override
