@@ -874,3 +874,9 @@ samples, guidance on mobile development, and a full API reference.
     5. 在FilterDrawer的Item点击事件中selectedListToggleItem(String data)
     6. 测试
     7. 优化
+
+### 5.1、 介绍Dio
+
+    【结论】
+    使用dio作为app的网络请求工具
+    Dio对HttpClient的封装，增加了一些功能如拦截器，全局配置，请求取消等。
