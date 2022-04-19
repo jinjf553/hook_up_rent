@@ -845,3 +845,13 @@ samples, guidance on mobile development, and a full API reference.
 
     【结论】
     使用全局状态，基于scoped_model实现
+
+### 4.71、 filterBar-drawer部分-ScopedModel-model
+
+    【实现】
+    1. 创建文件scoped_model/room_filter.dart
+    2. 添加scoped_model依赖
+    3. 编写model基本结构
+    4. 实现model数据结构
+    5. 实现model方法
+    6. 实现ScopedModelHelper
