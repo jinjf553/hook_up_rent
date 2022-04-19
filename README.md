@@ -880,3 +880,14 @@ samples, guidance on mobile development, and a full API reference.
     【结论】
     使用dio作为app的网络请求工具
     Dio对HttpClient的封装，增加了一些功能如拦截器，全局配置，请求取消等。
+
+### 5.2、 封装DioHttp
+
+    【编码】
+    1. 创建文件utils/dio_http.dart
+    2. 添加dio, material依赖
+    3. 完成DioHttp的基本结构
+    4. 完成初始化部分
+    5. 完成get方法
+    6. 完成post方法
+    7. 完成postData方法
