@@ -855,3 +855,11 @@ samples, guidance on mobile development, and a full API reference.
     4. 实现model数据结构
     5. 实现model方法
     6. 实现ScopedModelHelper
+
+### 4.72、 filterBar-drawer部分-ScopedModelHelper
+
+    【实现】
+    1. 添加文件utils/scoped_model_helper.dart
+    2. 添加scopedModel和material依赖
+    3. 实现类基本结构
+    4. 实现静态方法getModel
