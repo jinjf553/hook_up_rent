@@ -840,3 +840,8 @@ samples, guidance on mobile development, and a full API reference.
     3. 完善细节
         1. 隐藏Drawer按钮
         2. 打开Drawer
+
+### 4.70、 filterBar-drawer部分-数据分析
+
+    【结论】
+    使用全局状态，基于scoped_model实现
