@@ -891,3 +891,18 @@ samples, guidance on mobile development, and a full API reference.
     5. 完成get方法
     6. 完成post方法
     7. 完成postData方法
+
+### 5.3、 注册页联调
+
+    【操作步骤】
+    1. 接口文档分析（使用python fastapi做临时后端服务，详见backend/README.md文档）
+    2. 打开页面pages/register.dart
+    3. 在_RegisterPageState添加3个TextEditingController，并赋给3个TextField
+    4. 添加处理函数_registerHandle() async {}, 并在注册按钮事件中调用
+    5. 处理注册逻辑
+        1. 获取TextFeild值
+        2. 处理输入异常
+        3. 发送网络请求
+        4. 处理异常返回
+        5. 跳转到登录页面
+    6. 测试
