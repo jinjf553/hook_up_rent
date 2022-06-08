@@ -917,3 +917,13 @@ samples, guidance on mobile development, and a full API reference.
     1. 使用ScopedModel同步登录信息（token）
     2. 登录成功后，将token写入本地存储；添加一个app启动页，app启动的时候，加载token!
     3. 在DioHttp中添加Dio拦截器，当登录过期时，打开登录页。
+
+### 5.5、 封装Store
+
+    【实现步骤】
+    1. 新建文件/utils/store.dart
+    2. 添加shared_preferences
+    3. 编写类的基本结构
+    4. 实现初始化方法
+    5. 实现getString setString getStringList setStringList
+    6. 添加storeKeys
