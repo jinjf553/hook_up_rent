@@ -1,3 +1,7 @@
 sqlalchemy_utils==0.38.2
-sqlalchemy
-jwt==1.3.1
+sqlalchemy==1.4.37
+pyjwt==2.4.0
+python-multipart==0.0.5
+passlib==1.7.4
+pymysql==1.0.2
+bcrypt==3.2.2

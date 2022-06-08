@@ -2,13 +2,13 @@ from datetime import datetime, timedelta
 from typing import Optional
 
 import jwt
-from config import ALGORITHM, SECRET_KEY
-from fastapi import Depends, HTTPException, status
+from fastapi import Depends
 from fastapi.security import OAuth2PasswordBearer
-from jwt.exceptions import PyJWKError, PyJWTError
-from mysqlx import Session
+from jwt.exceptions import PyJWTError
+# from mysqlx import Session
 
-from orm import DBSession, DBUser, WithSession, get_db
+from config import ALGORITHM, SECRET_KEY
+# from orm import DBSession, DBUser, WithSession, get_db
 
 oauth2_scheme = OAuth2PasswordBearer(tokenUrl="/token")
 
