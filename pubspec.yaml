@@ -42,6 +42,7 @@ dependencies:
   share_plus: ^4.0.4
   scoped_model: ^1.1.0
   dio: ^4.0.6
+  shared_preferences: ^2.0.15
 
 dev_dependencies:
   flutter_test:
@@ -119,4 +120,3 @@ flutter:
     - static/images/home_profile_record.png
     - static/images/home_profile_order.png
     - static/images/home_profile_wallet.png
-

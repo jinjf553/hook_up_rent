@@ -906,3 +906,14 @@ samples, guidance on mobile development, and a full API reference.
         4. 处理异常返回
         5. 跳转到登录页面
     6. 测试
+
+### 5.4、 登录页联调--分析
+
+    【问题】
+    1. 登录状态怎么和其他页面同步？
+    2. 再次打开app，是否需要二次登录？
+    3. 登录过期如何处理？
+    【分析】
+    1. 使用ScopedModel同步登录信息（token）
+    2. 登录成功后，将token写入本地存储；添加一个app启动页，app启动的时候，加载token!
+    3. 在DioHttp中添加Dio拦截器，当登录过期时，打开登录页。
